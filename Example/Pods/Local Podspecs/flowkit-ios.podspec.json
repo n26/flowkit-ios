@@ -1,0 +1,49 @@
+{
+  "name": "flowkit-ios",
+  "version": "0.1.0",
+  "summary": "A short description of flowkit-ios.",
+  "description": "flowkit-ios",
+  "homepage": "https://github.com/n26/flowkit-ios/tree/main",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "NA": "alejandro.martinez@n26.com"
+  },
+  "source": {
+    "git": "https://github.com/n26/flowkit-ios.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": "5.0",
+  "module_name": "N26FlowKitCore",
+  "source_files": "flowkit-ios/Classes/**/*",
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "requires_app_host": false,
+      "dependencies": {
+        "Quick": [
+
+        ],
+        "Nimble": [
+
+        ],
+        "SwiftyMocky": [
+
+        ]
+      },
+      "source_files": [
+        "flowkit-ios/Tests/Classes/**/*.{swift}"
+      ],
+      "pod_target_xcconfig": {
+        "OTHER_SWIFT_FLAGS": "-DMocky"
+      }
+    }
+  ],
+  "swift_version": "5.0"
+}

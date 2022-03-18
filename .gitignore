@@ -1,0 +1,51 @@
+# Swift Package Manager
+.swiftpm
+.build/
+Package.resolved
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build generated #
+###################
+build/
+DerivedData/
+
+# Various settings #
+####################
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+# Other #
+#########
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+
+# AppCode #
+###########
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion,
+# Android Studio
+*.iml
+
+# Directory-based project format: #
+###################################
+.idea/
+
+# Cocoapods
+Pods/

@@ -1,0 +1,29 @@
+PODS:
+  - flowkit-ios (0.1.0)
+  - flowkit-ios/Tests (0.1.0):
+    - Nimble
+    - Quick
+  - Nimble (9.2.1)
+  - Quick (4.0.0)
+
+DEPENDENCIES:
+  - flowkit-ios (from `../`)
+  - flowkit-ios/Tests (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  flowkit-ios:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  flowkit-ios: d6e92d229db23bb15ed48a381c1cbde3f641549c
+  Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
+  Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
+
+PODFILE CHECKSUM: 82c49ed64107ddb444f782be1c7ee69f860cfd39
+
+COCOAPODS: 1.10.2

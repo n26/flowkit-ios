@@ -22,9 +22,5 @@ Pod::Spec.new do |s|
     test_spec.dependency 'Quick'
     test_spec.dependency 'Nimble'
     test_spec.source_files = ['flowkit-ios/Tests/Classes/**/*.{swift}']
-    test_spec.dependency 'SwiftyMocky'
-    test_spec.pod_target_xcconfig = {
-        'OTHER_SWIFT_FLAGS' => '-DMocky',
-    }
   end
 end

@@ -32,17 +32,11 @@
         ],
         "Nimble": [
 
-        ],
-        "SwiftyMocky": [
-
         ]
       },
       "source_files": [
         "flowkit-ios/Tests/Classes/**/*.{swift}"
-      ],
-      "pod_target_xcconfig": {
-        "OTHER_SWIFT_FLAGS": "-DMocky"
-      }
+      ]
     }
   ],
   "swift_version": "5.0"

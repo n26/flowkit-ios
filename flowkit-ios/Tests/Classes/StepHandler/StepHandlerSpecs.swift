@@ -5,6 +5,7 @@
 @testable import N26FlowKitCore
 import Nimble
 import Quick
+import UIKit
 
 final class StepHandlerSpecs: QuickSpec {
     override func spec() {

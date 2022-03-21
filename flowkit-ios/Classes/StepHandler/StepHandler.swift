@@ -3,6 +3,7 @@
 //
 
 import Foundation
+import UIKit
 
 public protocol StepHandlerT {
     associatedtype FLOW_OUTPUT: FlowOutputDefinition

@@ -2,7 +2,7 @@
 // Created by Alex Martinez on 11/06/2020.
 //
 
-public struct AmountDisplayCondition: Decodable, Equatable {
+public struct NumericDisplayConditions: Decodable, Equatable {
     public let minAmount: Double?
     public let maxAmount: Double?
     
@@ -12,7 +12,7 @@ public struct AmountDisplayCondition: Decodable, Equatable {
     }
 }
 
-extension AmountDisplayCondition: Matching {
+extension NumericDisplayConditions: Matching {
     func match(stepId: String, input: [String: Any]) -> Bool {
         guard let amountAnswered = input[stepId] as? Double else {
             return false

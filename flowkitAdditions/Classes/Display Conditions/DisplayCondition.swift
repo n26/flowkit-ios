@@ -14,18 +14,18 @@ public struct DisplayCondition: Decodable, Equatable, DisplayConditionProtocol {
     public enum Condition: Equatable {
         case text(condition: TextDisplayCondition)
         case date(condition: DateDisplayCondition)
-        case amount(condition: AmountDisplayCondition)
+        case numeric(condition: NumericDisplayConditions)
         case bool(condition: BoolDisplayCondition)
 
         var matcher: Matching {
             switch self {
-            case .text(let condition):
+            case let .text(condition):
                 return condition
-            case .amount(let condition):
+            case let .numeric(condition):
                 return condition
-            case .date(let condition):
+            case let .date(condition):
                 return condition
-            case .bool(let condition):
+            case let .bool(condition):
                 return condition
             }
         }
@@ -48,10 +48,10 @@ public struct DisplayCondition: Decodable, Equatable, DisplayConditionProtocol {
                     forKey: .condition)
             )
             
-        case "AMOUNT":
-            condition = .amount(
+        case "NUMERIC":
+            condition = .numeric(
                 condition: try container.decode(
-                    AmountDisplayCondition.self,
+                    NumericDisplayConditions.self,
                     forKey: .condition)
             )
             

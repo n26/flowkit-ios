@@ -13,15 +13,15 @@ public struct NextStepCondition: NextStepConditionProtocol {
     enum Condition: Equatable {
         case text(condition: TextNextStepsCondition)
         case date(condition: DateNextStepsCondition)
-        case amount(condition: AmountNextStepsCondition)
+        case numeric(condition: NumericNextStepsCondition)
         
         var matcher: StepConditionMatching {
             switch self {
-            case .text(let condition):
+            case let .text(condition):
                 return condition
-            case .amount(let condition):
+            case let .numeric(condition):
                 return condition
-            case .date(let condition):
+            case let .date(condition):
                 return condition
             }
         }
@@ -45,10 +45,10 @@ public struct NextStepCondition: NextStepConditionProtocol {
                 )
             )
             
-        case "AMOUNT":
-            condition = .amount(
+        case "NUMERIC":
+            condition = .numeric(
                 condition: try container.decode(
-                    AmountNextStepsCondition.self,
+                    NumericNextStepsCondition.self,
                     forKey: .condition
                 )
             )

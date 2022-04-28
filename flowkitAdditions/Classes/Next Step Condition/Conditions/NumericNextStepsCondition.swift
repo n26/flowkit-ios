@@ -4,13 +4,13 @@
 
 import N26FlowKitCore
 
-struct AmountNextStepsCondition: Decodable, Equatable {
+struct NumericNextStepsCondition: Decodable, Equatable {
     let answerStepId: String
     let minAmount: Double?
     let maxAmount: Double?
 }
 
-extension AmountNextStepsCondition: StepConditionMatching {
+extension NumericNextStepsCondition: StepConditionMatching {
     func match(input: [String: Any]) -> Bool {
         guard let amountAnswered = input[answerStepId] as? Double else {
             return false

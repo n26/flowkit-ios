@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'flowkitAdditions_Example' do
+  pod 'flowkitAdditions', :path => '../'
+
+  target 'flowkitAdditions_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

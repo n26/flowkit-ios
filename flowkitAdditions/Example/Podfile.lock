@@ -1,0 +1,16 @@
+PODS:
+  - flowkitAdditions (0.1.0)
+
+DEPENDENCIES:
+  - flowkitAdditions (from `../`)
+
+EXTERNAL SOURCES:
+  flowkitAdditions:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  flowkitAdditions: a4a00f21f332980caa133a288d923bbc027732d2
+
+PODFILE CHECKSUM: 4352f0e61ef6e19e16028d6efb162937bac1eb10
+
+COCOAPODS: 1.11.3

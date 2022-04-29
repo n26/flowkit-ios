@@ -4,9 +4,6 @@
 
 import Foundation
 
-///
-/// Erasure type of StepFactory
-///
 public struct AnyStepFactory<STEP: StepProtocol, OUTPUT: FlowOutputDefinition>: StepFactory {
     private let _makeHandler: (String) -> AnyStepHandler<STEP, OUTPUT>?
 

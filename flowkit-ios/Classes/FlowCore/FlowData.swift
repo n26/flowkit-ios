@@ -4,6 +4,11 @@
 
 import Foundation
 
+///
+/// Struct to handle the required data for a flow
+/// - Generics
+///     - STEP: A concrete Step
+/// - Important: STEP type must match with the step type used in [flow definition](x-source-tag://FlowDefinition) and in the [step factory](x-source-tag://StepFactory).
 public struct FlowData<STEP: StepProtocol & Decodable>: Decodable, Equatable {
     enum CodingKeys: String, CodingKey {
         case id
@@ -15,6 +20,12 @@ public struct FlowData<STEP: StepProtocol & Decodable>: Decodable, Equatable {
     let initialStepId: String
     var stepsInfo: [AnyStep<STEP>]
 
+    ///
+    /// Use this constructor if you would like to define a flow programmatically
+    /// - Parameters:
+    ///   - id: Flow identifier
+    ///   - initialStepId: Initial step identifier that FlowKit will use to start the flow
+    ///   - stepsInfo: Array of steps
     public init(id: String, initialStepId: String, stepsInfo: [STEP]) {
         self.id = id
         self.initialStepId = initialStepId
@@ -31,7 +42,11 @@ public struct FlowData<STEP: StepProtocol & Decodable>: Decodable, Equatable {
             AnyStep<STEP>($0)
         }
     }
-    
+
+    ///
+    /// Append a flow to the final step of the current flow
+    /// - Parameter flow: Flow to be appended
+    /// - Returns: A new flow data with both flows
     public func appending(_ flow: FlowData<STEP>) -> FlowData<STEP> {
         var mergedSteps = stepsInfo
         if var lastStep = stepsInfo.last {

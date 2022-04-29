@@ -5,10 +5,27 @@
 import Foundation
 
 ///
-/// CONTENT: Step content input type. If the step doesn't need content you should use **StepEmptyContentInput**.
-/// STEP_OUTPUT: The output type produced by the step. If your step doesn't produce any outputs you should use **Never**.
-/// FLOW_OUTPUT: Context to use as shared data between steps. If your step doesn't need any context you should use **Never**.
+/// A concrete Step definition interface
+/// - Associated types
+///     - CONTENT: Step content input type. If the step doesn't need content you should use [StepEmptyContentInput](x-source-tag://StepEmptyContentInput).
+///     - STEP_OUTPUT: The output type produced by the step. If your step doesn't produce any outputs you should use [StepOutputEmpty](x-source-tag://StepOutputEmpty).
+///     - FLOW_OUTPUT: The flow output type
+///     - STEP: The generic step definition
+/// - Properties
+///     - registerOutputKeyPath:
+/// ````
+///     struct ConcreteStepDefinition: StepHandlerDefinition {
+///         typealias CONTENT = ConcreteFlowOutput
+///         typealias STEP_OUTPUT = ConcreteFlowOutput
+///         typealias FLOW_OUTPUT = ConcreteFlowOutput
+///         typealias STEP = ConcreteFlowOutput
 ///
+///         static var registerOutputKeyPath: KeyPath<FLOW_OUTPUT, STEP_OUTPUT>? {
+///             return
+///         }
+///     }
+/// ````
+/// - Tag: StepHandlerDefinition
 public protocol StepHandlerDefinition {
     associatedtype CONTENT: Decodable
     associatedtype STEP_OUTPUT: StepOutput

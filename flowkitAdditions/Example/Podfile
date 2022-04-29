@@ -1,6 +1,7 @@
 use_frameworks!
 
-source 'https://github.com/n26/flowkit-ios'
+#TODO: Remove it as soon as the repository is public
+source 'git@github.com:n26/flowkit-ios.git'
 
 platform :ios, '12.0'
 

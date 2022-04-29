@@ -4,17 +4,10 @@
 
 import Foundation
 
-///
-/// Protocol that a Context has to conforms. All the types have to conform to *StepOutput*
-///
-///     struct YourFlowDefinition: FlowOutputDefinition {
-///         let transactionId: String
-///         let selectedOffer: Offer
-///     }
 public protocol FlowOutputDefinition { }
 
 ///
-/// Use **EmptyOutputDefinition** when you don't need the context
+/// Use when access to steps output data in the middle/end of a flow is not needed
 ///
 public struct FlowOutputEmptyDefinition: FlowOutputDefinition { }
 
@@ -31,15 +24,16 @@ public struct CurrentFlowOutput {
 }
 
 ///
-/// Class to store all the steps output in a concrete context. It can be accessed through:
-/// **rawData:** Dictionary with the pair *stepId: StepOutput* .So the output can be accessed through the *stepId* and the value has to be casted.
-/// **serializableDict:** Dictionary with the pair *stepId: StepOutput* . So the output can be accessed through the *stepId* and the value is serializable (e.g. for network requests)
-/// **FlowOutputContext:** Define a context that is type safe and allow you to use autocompletion.
-/// The output can be accessed through the properties defined in the context. The *stepId* is automatically linked so it's not needed to access the data.
-///
+/// Class to store all the steps output that would allow to access them in a safe typed way.
+/// - Generics
+///     - OUTPUT: Flow output definition
 @dynamicMemberLookup
 public final class FlowOutput<OUTPUT: FlowOutputDefinition> {
+    ///
+    /// The flow identifier
     public let flowId: String
+    ///
+    /// Dictionary with the pair *stepId: StepOutput* .So the output can be accessed through the *stepId* and the value has to be casted.
     public let rawData: [String: Any]
     private let keyPathMapped: [AnyKeyPath: String]
 

@@ -4,8 +4,10 @@
 
 import Foundation
 
+/// Interface that a step output has to implement
 public protocol StepOutput { }
 
+/// - Tag: StepOutputEmpty
 public struct StepOutputEmpty: StepOutput { }
 
 extension String: StepOutput { }

@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version          = '0.1.0'
   s.summary          = 'flowkit-ios core'
 
-  s.description      = "This is the N26 flowkit core for the community"
+  s.description      = "This is the N26 FlowKit core for the community"
 
   s.homepage         = 'https://github.com/n26/flowkit-ios/tree/main'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

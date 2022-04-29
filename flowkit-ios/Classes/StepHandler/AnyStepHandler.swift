@@ -3,6 +3,7 @@
 //
 
 import Foundation
+import UIKit
 
 ///
 ///
@@ -13,6 +14,9 @@ public struct AnyStepHandler<STEP: StepProtocol, FLOW_OUTPUT: FlowOutputDefiniti
     private let _perform: (STEP, Decoder, UINavigationController, CurrentFlowOutput, AnyKeyPath?, @escaping (Any?) -> Void) throws -> Void
     private let _registerOutputKeyPath: AnyKeyPath?
 
+    ///
+    /// Creates a AnyStepHandler from a concrete StepHandler
+    /// - Parameter handler: Concrete StepHandler
     public init<T>(_ handler: StepHandler<T>) where T.FLOW_OUTPUT == FLOW_OUTPUT, T.STEP == STEP {
         _shouldBeDisplayed = handler.shouldBeDisplayed
         _perform = handler.perform

@@ -1,0 +1,9 @@
+use_frameworks!
+
+source 'https://github.com/n26/flowkit-ios'
+
+platform :ios, '12.0'
+
+target 'flowkitAdditions_Example' do
+  pod 'flowkitAdditions', :path => '../../'
+end

@@ -3,7 +3,7 @@
 ![Platforms](https://img.shields.io/badge/Platforms-iOS_12.x-yellowgreen?style=flat-square)
 ![CocoaPods](https://img.shields.io/badge/Cocoapods-compatible-red?style=flat-square)
 ![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)
-![Coverage](https://img.shields.io/badge/coverage-94.5%25-lightgrey?style=flat-square)
+![Coverage](https://img.shields.io/badge/coverage-94.5%25-green?style=flat-square)
 
 
 

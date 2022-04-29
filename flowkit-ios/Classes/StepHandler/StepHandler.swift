@@ -13,6 +13,10 @@ public protocol StepHandlerT {
     var registerOutputKeyPath: AnyKeyPath? { get }
 }
 
+/// The step handler struct
+/// - Generics
+///     - STEP_DEFINITION: A concrete type that defines a step [StepHandlerDefinition](x-source-tag://StepHandlerDefinition)
+///
 public struct StepHandler<STEP_DEFINITION: StepHandlerDefinition>: StepHandlerT {
     public typealias STEP = STEP_DEFINITION.STEP
     public typealias FLOW_OUTPUT = STEP_DEFINITION.FLOW_OUTPUT
@@ -21,16 +25,6 @@ public struct StepHandler<STEP_DEFINITION: StepHandlerDefinition>: StepHandlerT 
     let perform: (STEP_DEFINITION.STEP, STEP_DEFINITION.CONTENT, UINavigationController, FlowOutput<STEP_DEFINITION.FLOW_OUTPUT>, @escaping (STEP_DEFINITION.STEP_OUTPUT?) -> Void) -> Void
     public let registerOutputKeyPath: AnyKeyPath?
 
-    ///
-    ///
-    /// - Parameters:
-    ///   - shouldBeDisplayed: Implement it to decide under which conditions the step should be displayed
-    ///   - perform: Perform only executed when is the step turn. Here is when the scene is created and presented. The completion has to be called to finish the step.
-    ///   - stepInfo: Step info data
-    ///   - stepContent: Content input object
-    ///   - navigation: Navigation controller
-    ///   - currentFlowOutput: Current flow output with all the previous steps result
-    ///   - output: Output value of the step
     init(shouldBeDisplayed: ((_ stepContent: STEP_DEFINITION.CONTENT, _ displayConditions: [DisplayConditionProtocol]?, _ currentFlowOutput: FlowOutput<STEP_DEFINITION.FLOW_OUTPUT>) -> Bool)? = nil,
          perform: @escaping (_ stepInfo: STEP_DEFINITION.STEP, _ stepContent: STEP_DEFINITION.CONTENT, _ navigation: UINavigationController, _ currentFlowOutput: FlowOutput<STEP_DEFINITION.FLOW_OUTPUT>, @escaping ( _ output: STEP_DEFINITION.STEP_OUTPUT?) -> Void) -> Void) {
         registerOutputKeyPath = STEP_DEFINITION.registerOutputKeyPath
@@ -49,6 +43,12 @@ public struct StepHandler<STEP_DEFINITION: StepHandlerDefinition>: StepHandlerT 
         }
     }
 
+    /// Create a new StepHandler that requires to define a step output
+    ///
+    /// - Parameters:
+    ///   - shouldBeDisplayed: Closure to override the default shouldBeDisplayed logic.
+    ///   - perform: Closure that is going to be executed when the step is performed. You should put here your step logic.
+    /// - Returns: A new StepHandler
     public static func create<STEP_DEFINITION: StepHandlerDefinition>(
         shouldBeDisplayed: ((_ stepContent: STEP_DEFINITION.CONTENT, _ displayConditions: [DisplayConditionProtocol]?, _ currentFlowOutput: FlowOutput<STEP_DEFINITION.FLOW_OUTPUT>) -> Bool)? = nil,
         perform: @escaping (_ stepInfo: STEP_DEFINITION.STEP, _ stepContent: STEP_DEFINITION.CONTENT, _ navigation: UINavigationController, _ currentFlowOutput: FlowOutput<STEP_DEFINITION.FLOW_OUTPUT>, @escaping ( _ output: STEP_DEFINITION.STEP_OUTPUT?) -> Void) -> Void
@@ -56,6 +56,12 @@ public struct StepHandler<STEP_DEFINITION: StepHandlerDefinition>: StepHandlerT 
         .init(shouldBeDisplayed: shouldBeDisplayed, perform: perform)
     }
 
+    /// Create a new StepHandler that completes without returning any data
+    ///
+    /// - Parameters:
+    ///   - shouldBeDisplayed: Closure to override the default shouldBeDisplayed logic
+    ///   - perform: Closure that is going to be executed when the step is performed. You should put here your step logic.
+    /// - Returns: A new StepHandler
     public static func createWithEmptyOutput<STEP_DEFINITION: StepHandlerDefinition>(
         shouldBeDisplayed: ((_ stepContent: STEP_DEFINITION.CONTENT, _ displayConditions: [DisplayConditionProtocol]?, _ currentFlowOutput: FlowOutput<STEP_DEFINITION.FLOW_OUTPUT>) -> Bool)? = nil,
         perform: @escaping (_ stepInfo: STEP_DEFINITION.STEP, _ stepContent: STEP_DEFINITION.CONTENT, _ navigation: UINavigationController, _ currentFlowOutput: FlowOutput<STEP_DEFINITION.FLOW_OUTPUT>, @escaping () -> Void) -> Void

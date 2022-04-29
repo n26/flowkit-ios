@@ -6,11 +6,20 @@ import Foundation
 
 import UIKit
 
+///
+/// Flow struct
+/// - Generics
+///     - FLOW: The flow definition. [FlowDefinition](x-source-tag://FlowDefinition)
 public struct FlowCore<FLOW: FlowDefinition> {
     private let id: String
     private let step: StepsTree<FLOW.STEP>
     private let featureStepFactory: AnyStepFactory<FLOW.STEP, FLOW.OUTPUT>
 
+    ///
+    /// Main Flow constructor
+    /// - Parameters:
+    ///   - flowData: Data required to build the flow
+    ///   - featureStepFactory: Factory for creating your steps
     public init<T: StepFactory>(
         flowData: FlowData<FLOW.STEP>,
         featureStepFactory: T
@@ -24,7 +33,7 @@ public struct FlowCore<FLOW: FlowDefinition> {
     /// Call this method to start the flow
     /// - Parameters:
     ///   - navigation: Navigation controller where start the flow
-    ///   - willPerformStep: Closure executed when a new step is performed
+    ///   - willPerformStep: Closure executed when a new step is going to be performed
     ///   - onErrorHandler: Closure executed when flow or step throw an error
     ///   - onFinish: Closure executed when the flow is finished
     public func start(
@@ -35,7 +44,14 @@ public struct FlowCore<FLOW: FlowDefinition> {
     ) {
         do {
             try verifyFlowIntegrity(for: step)
-            perform(step: step, navigation: navigation, flowOutput: CurrentFlowOutput(flowId: id, rawData: [:], keyPathMapped: [:]), willPerformStep: willPerformStep, onErrorHandler: onErrorHandler, onFinish: onFinish)
+            perform(
+                step: step,
+                navigation: navigation,
+                flowOutput: CurrentFlowOutput(flowId: id, rawData: [:], keyPathMapped: [:]),
+                willPerformStep: willPerformStep,
+                onErrorHandler: onErrorHandler,
+                onFinish: onFinish
+            )
         } catch {
             guard let error = error as? FlowCoreError else {
                 onErrorHandler?(FlowCoreError.unknownError, navigation)
@@ -134,7 +150,7 @@ public struct FlowCore<FLOW: FlowDefinition> {
                 guard let defaultNextStepId = try defaultNextStepId(stepInfo: stepInfo) else {
                     return .none
                 }
-                // TODO: Refactory abstracting function
+
                 return nextSteps.first {
                     switch $0 {
                     case .none, .error:

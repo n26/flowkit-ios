@@ -1,0 +1,23 @@
+PODS:
+  - flowkit-ios (0.1.0)
+  - flowkitAdditions (0.1.0):
+    - flowkit-ios (= 0.1.0)
+
+DEPENDENCIES:
+  - flowkitAdditions (from `../../`)
+
+SPEC REPOS:
+  https://github.com/n26/flowkit-ios:
+    - flowkit-ios
+
+EXTERNAL SOURCES:
+  flowkitAdditions:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  flowkit-ios: dbd655915c73df2e1e0bfe66346e80e412147df6
+  flowkitAdditions: 6c1bfbe46e7da794e1d6b6f740d304c31e6e4a1f
+
+PODFILE CHECKSUM: bc62c9e7bf3d7f25cd951780c760fe7e18ce5d72
+
+COCOAPODS: 1.11.3

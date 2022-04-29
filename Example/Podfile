@@ -1,7 +1,0 @@
-use_frameworks!
-
-platform :ios, '12.0'
-
-target 'flowkit-ios_Example' do
-  pod 'flowkit-ios', :path => '../', :testspecs => ['Tests']
-end

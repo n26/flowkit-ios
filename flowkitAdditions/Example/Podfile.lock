@@ -1,14 +1,24 @@
 PODS:
   - flowkit-ios (0.1.0)
+  - flowkit-ios/Tests (0.1.0):
+    - Nimble
+    - Quick
   - flowkitAdditions (0.1.0):
     - flowkit-ios (= 0.1.0)
+  - Nimble (10.0.0)
+  - Quick (5.0.1)
 
 DEPENDENCIES:
+  - flowkit-ios
+  - flowkit-ios/Tests
   - flowkitAdditions (from `../../`)
 
 SPEC REPOS:
-  "git@github.com:n26/flowkit-ios.git":
+  https://github.com/n26/flowkit-ios:
     - flowkit-ios
+  trunk:
+    - Nimble
+    - Quick
 
 EXTERNAL SOURCES:
   flowkitAdditions:
@@ -17,7 +27,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   flowkit-ios: dbd655915c73df2e1e0bfe66346e80e412147df6
   flowkitAdditions: 6c1bfbe46e7da794e1d6b6f740d304c31e6e4a1f
+  Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
+  Quick: 749aa754fd1e7d984f2000fe051e18a3a9809179
 
-PODFILE CHECKSUM: e3d5b6bad237dbab9f7bdd2a3d0ec275a127161d
+PODFILE CHECKSUM: 518a1616bf3fabc4ed901b3ce88f3ad5f84573fe
 
 COCOAPODS: 1.11.3

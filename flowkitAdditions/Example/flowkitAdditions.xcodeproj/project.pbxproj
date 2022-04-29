@@ -12,14 +12,28 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		743096ED281C170900470CCA /* flowkitAdditions_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743096EC281C170900470CCA /* flowkitAdditions_Tests.swift */; };
 		9D18C67C14D2688E1AC02515 /* Pods_flowkitAdditions_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDDDAC4C02B89C741042514 /* Pods_flowkitAdditions_Example.framework */; };
+		C0195C5D2EAAAC8C0FE41221 /* Pods_flowkitAdditions_Example_flowkitAdditions_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4EAC67D10512C25699A3CEE /* Pods_flowkitAdditions_Example_flowkitAdditions_Tests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		743096EE281C170900470CCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = flowkitAdditions_Example;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		01E359073273C644A4969407 /* flowkitAdditions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = flowkitAdditions.podspec; path = ../flowkitAdditions.podspec; sourceTree = "<group>"; };
 		094AEE3B4BAFF66062B58D3B /* Pods_flowkitAdditions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flowkitAdditions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E4A0359E0FC7EE090121DF4 /* Pods-flowkitAdditions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowkitAdditions_Example.release.xcconfig"; path = "Target Support Files/Pods-flowkitAdditions_Example/Pods-flowkitAdditions_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2FDDDAC4C02B89C741042514 /* Pods_flowkitAdditions_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flowkitAdditions_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40590A0D2AB0705B86D4A8C4 /* Pods_flowkitAdditions_Example_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flowkitAdditions_Example_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		450A25E704E9966B9BAF57D1 /* Pods-flowkitAdditions_Example-flowkitAdditions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowkitAdditions_Example-flowkitAdditions_Tests.release.xcconfig"; path = "Target Support Files/Pods-flowkitAdditions_Example-flowkitAdditions_Tests/Pods-flowkitAdditions_Example-flowkitAdditions_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		481D13CE977B36F8BE51D348 /* Pods-flowkitAdditions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowkitAdditions_Tests.release.xcconfig"; path = "Target Support Files/Pods-flowkitAdditions_Tests/Pods-flowkitAdditions_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* flowkitAdditions_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flowkitAdditions_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -28,9 +42,15 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		743096EA281C170900470CCA /* flowkitAdditions_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flowkitAdditions_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		743096EC281C170900470CCA /* flowkitAdditions_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flowkitAdditions_Tests.swift; sourceTree = "<group>"; };
 		76206D1D44AD8D75158C30EA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A415448723539BD6D28F1251 /* Pods-flowkitAdditions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowkitAdditions_Tests.debug.xcconfig"; path = "Target Support Files/Pods-flowkitAdditions_Tests/Pods-flowkitAdditions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A78C339A91C3BB46F66EB5CB /* Pods-flowkitAdditions_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowkitAdditions_Example.debug.xcconfig"; path = "Target Support Files/Pods-flowkitAdditions_Example/Pods-flowkitAdditions_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B4EAC67D10512C25699A3CEE /* Pods_flowkitAdditions_Example_flowkitAdditions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flowkitAdditions_Example_flowkitAdditions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B92CB61F78D6A44F35147EFF /* Pods-flowkitAdditions_Example-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowkitAdditions_Example-Tests.release.xcconfig"; path = "Target Support Files/Pods-flowkitAdditions_Example-Tests/Pods-flowkitAdditions_Example-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D801431B4E93F50CF58FBF16 /* Pods-flowkitAdditions_Example-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowkitAdditions_Example-Tests.debug.xcconfig"; path = "Target Support Files/Pods-flowkitAdditions_Example-Tests/Pods-flowkitAdditions_Example-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8F93D9A1FDDD68FDECD3B97 /* Pods-flowkitAdditions_Example-flowkitAdditions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowkitAdditions_Example-flowkitAdditions_Tests.debug.xcconfig"; path = "Target Support Files/Pods-flowkitAdditions_Example-flowkitAdditions_Tests/Pods-flowkitAdditions_Example-flowkitAdditions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EA3DA69A403A20ADA7EDA2DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,6 +63,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		743096E7281C170900470CCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0195C5D2EAAAC8C0FE41221 /* Pods_flowkitAdditions_Example_flowkitAdditions_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -51,6 +79,8 @@
 			children = (
 				2FDDDAC4C02B89C741042514 /* Pods_flowkitAdditions_Example.framework */,
 				094AEE3B4BAFF66062B58D3B /* Pods_flowkitAdditions_Tests.framework */,
+				40590A0D2AB0705B86D4A8C4 /* Pods_flowkitAdditions_Example_Tests.framework */,
+				B4EAC67D10512C25699A3CEE /* Pods_flowkitAdditions_Example_flowkitAdditions_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -62,6 +92,10 @@
 				0E4A0359E0FC7EE090121DF4 /* Pods-flowkitAdditions_Example.release.xcconfig */,
 				A415448723539BD6D28F1251 /* Pods-flowkitAdditions_Tests.debug.xcconfig */,
 				481D13CE977B36F8BE51D348 /* Pods-flowkitAdditions_Tests.release.xcconfig */,
+				D801431B4E93F50CF58FBF16 /* Pods-flowkitAdditions_Example-Tests.debug.xcconfig */,
+				B92CB61F78D6A44F35147EFF /* Pods-flowkitAdditions_Example-Tests.release.xcconfig */,
+				D8F93D9A1FDDD68FDECD3B97 /* Pods-flowkitAdditions_Example-flowkitAdditions_Tests.debug.xcconfig */,
+				450A25E704E9966B9BAF57D1 /* Pods-flowkitAdditions_Example-flowkitAdditions_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -71,6 +105,7 @@
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for flowkitAdditions */,
+				743096EB281C170900470CCA /* flowkitAdditions_Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				400BD452CDCF5122498551E7 /* Pods */,
 				0DC6F5A57B4BADBF7609DDE8 /* Frameworks */,
@@ -81,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* flowkitAdditions_Example.app */,
+				743096EA281C170900470CCA /* flowkitAdditions_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +153,14 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		743096EB281C170900470CCA /* flowkitAdditions_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				743096EC281C170900470CCA /* flowkitAdditions_Tests.swift */,
+			);
+			path = flowkitAdditions_Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,19 +183,44 @@
 			productReference = 607FACD01AFB9204008FA782 /* flowkitAdditions_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		743096E9281C170900470CCA /* flowkitAdditions_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 743096F0281C170900470CCA /* Build configuration list for PBXNativeTarget "flowkitAdditions_Tests" */;
+			buildPhases = (
+				910797238378E61AD0187B93 /* [CP] Check Pods Manifest.lock */,
+				743096E6281C170900470CCA /* Sources */,
+				743096E7281C170900470CCA /* Frameworks */,
+				743096E8281C170900470CCA /* Resources */,
+				6D63EAA38C3066E3B64058AF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				743096EF281C170900470CCA /* PBXTargetDependency */,
+			);
+			name = flowkitAdditions_Tests;
+			productName = flowkitAdditions_Tests;
+			productReference = 743096EA281C170900470CCA /* flowkitAdditions_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
+					};
+					743096E9281C170900470CCA = {
+						CreatedOnToolsVersion = 13.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
@@ -170,6 +239,7 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* flowkitAdditions_Example */,
+				743096E9281C170900470CCA /* flowkitAdditions_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -182,6 +252,13 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		743096E8281C170900470CCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +281,48 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-flowkitAdditions_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D63EAA38C3066E3B64058AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-flowkitAdditions_Example-flowkitAdditions_Tests/Pods-flowkitAdditions_Example-flowkitAdditions_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/flowkit-ios/N26FlowKitCore.framework",
+				"${BUILT_PRODUCTS_DIR}/flowkitAdditions/flowkitAdditions.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/N26FlowKitCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/flowkitAdditions.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-flowkitAdditions_Example-flowkitAdditions_Tests/Pods-flowkitAdditions_Example-flowkitAdditions_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		910797238378E61AD0187B93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-flowkitAdditions_Example-flowkitAdditions_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -242,7 +361,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		743096E6281C170900470CCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				743096ED281C170900470CCA /* flowkitAdditions_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		743096EF281C170900470CCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* flowkitAdditions_Example */;
+			targetProxy = 743096EE281C170900470CCA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
@@ -393,6 +528,69 @@
 			};
 			name = Release;
 		};
+		743096F1281C170900470CCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F93D9A1FDDD68FDECD3B97 /* Pods-flowkitAdditions_Example-flowkitAdditions_Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.flowkitAdditions-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flowkitAdditions_Example.app/flowkitAdditions_Example";
+			};
+			name = Debug;
+		};
+		743096F2281C170900470CCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 450A25E704E9966B9BAF57D1 /* Pods-flowkitAdditions_Example-flowkitAdditions_Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.flowkitAdditions-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flowkitAdditions_Example.app/flowkitAdditions_Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,6 +608,15 @@
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		743096F0281C170900470CCA /* Build configuration list for PBXNativeTarget "flowkitAdditions_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				743096F1281C170900470CCA /* Debug */,
+				743096F2281C170900470CCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,10 +7,10 @@ import Foundation
 import UIKit
 
 ///
-/// Flow struct
+/// FlowKit struct
 /// - Generics
 ///     - FLOW: The flow definition. [FlowDefinition](x-source-tag://FlowDefinition)
-public struct FlowCore<FLOW: FlowDefinition> {
+public struct FlowKit<FLOW: FlowDefinition> {
     private let id: String
     private let step: StepsTree<FLOW.STEP>
     private let featureStepFactory: AnyStepFactory<FLOW.STEP, FLOW.OUTPUT>
@@ -39,7 +39,7 @@ public struct FlowCore<FLOW: FlowDefinition> {
     public func start(
         on navigation: UINavigationController,
         willPerformStep: ((FLOW.STEP) -> Void)? = nil,
-        onErrorHandler: ((FlowCore.FlowCoreError, UINavigationController) -> Void)? = nil,
+        onErrorHandler: ((FlowKit.FlowError, UINavigationController) -> Void)? = nil,
         onFinish: @escaping (FlowOutput<FLOW.OUTPUT>) -> Void
     ) {
         do {
@@ -53,8 +53,8 @@ public struct FlowCore<FLOW: FlowDefinition> {
                 onFinish: onFinish
             )
         } catch {
-            guard let error = error as? FlowCoreError else {
-                onErrorHandler?(FlowCoreError.unknownError, navigation)
+            guard let error = error as? FlowError else {
+                onErrorHandler?(FlowError.unknownError, navigation)
                 return
             }
             onErrorHandler?(error, navigation)
@@ -66,7 +66,7 @@ public struct FlowCore<FLOW: FlowDefinition> {
         navigation: UINavigationController,
         flowOutput: CurrentFlowOutput,
         willPerformStep: ((FLOW.STEP) -> Void)?,
-        onErrorHandler: ((FlowCore.FlowCoreError, UINavigationController) -> Void)?,
+        onErrorHandler: ((FlowKit.FlowError, UINavigationController) -> Void)?,
         onFinish: @escaping (FlowOutput<FLOW.OUTPUT>) -> Void
     ) {
         guard case .node(let stepInfo, _) = step else {
@@ -87,7 +87,7 @@ public struct FlowCore<FLOW: FlowDefinition> {
                     onFinish: onFinish
                 )
             } catch {
-                onErrorHandler?(FlowCoreError.multipleMatchingConditions(stepInfo: stepInfo.stepRaw), navigation)
+                onErrorHandler?(FlowError.multipleMatchingConditions(stepInfo: stepInfo.stepRaw), navigation)
             }
 
             return
@@ -129,11 +129,11 @@ public struct FlowCore<FLOW: FlowDefinition> {
                         onFinish: onFinish
                     )
                 } catch {
-                    onErrorHandler?(FlowCoreError.multipleMatchingConditions(stepInfo: stepInfo.stepRaw), navigation)
+                    onErrorHandler?(FlowError.multipleMatchingConditions(stepInfo: stepInfo.stepRaw), navigation)
                 }
             }
         } catch {
-            onErrorHandler?(FlowCoreError.stepContentNotDecodable(stepInfo: stepInfo.stepRaw), navigation)
+            onErrorHandler?(FlowError.stepContentNotDecodable(stepInfo: stepInfo.stepRaw), navigation)
         }
     }
 
@@ -180,7 +180,7 @@ public struct FlowCore<FLOW: FlowDefinition> {
         guard !nextDefaultSteps.isEmpty else { return nil }
 
         guard nextDefaultSteps.count == 1 else {
-            throw FlowCoreError.multipleMatchingConditions(stepInfo: stepInfo.stepRaw)
+            throw FlowError.multipleMatchingConditions(stepInfo: stepInfo.stepRaw)
         }
 
         return nextDefaultSteps[0].nextStepId
@@ -203,7 +203,7 @@ public struct FlowCore<FLOW: FlowDefinition> {
         guard !nextStepsMatching.isEmpty else { return nil }
 
         guard nextStepsMatching.count == 1 else {
-            throw FlowCoreError.multipleMatchingConditions(stepInfo: stepInfo.stepRaw)
+            throw FlowError.multipleMatchingConditions(stepInfo: stepInfo.stepRaw)
         }
 
         return nextStepsMatching[0].nextStepId
@@ -214,10 +214,10 @@ public struct FlowCore<FLOW: FlowDefinition> {
         case .none:
             return
         case .error(let error):
-            throw FlowCoreError.cannotCreateFlow(stepError: error)
+            throw FlowError.cannotCreateFlow(stepError: error)
         case .node(let stepInfo, let nextSteps):
             guard featureStepFactory.makeHandler(for: stepInfo.type) != nil else {
-                throw FlowCoreError.cannotCreateStepHandler(stepInfo: stepInfo.stepRaw)
+                throw FlowError.cannotCreateStepHandler(stepInfo: stepInfo.stepRaw)
             }
 
             try nextSteps.forEach {
@@ -227,8 +227,8 @@ public struct FlowCore<FLOW: FlowDefinition> {
     }
 }
 
-extension FlowCore {
-    public enum FlowCoreError: Error {
+extension FlowKit {
+    public enum FlowError: Error {
         case multipleMatchingConditions(stepInfo: FLOW.STEP)
         case cannotCreateStepHandler(stepInfo: FLOW.STEP)
         case stepContentNotDecodable(stepInfo: FLOW.STEP)

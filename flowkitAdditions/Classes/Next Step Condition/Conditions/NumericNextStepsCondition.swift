@@ -2,7 +2,7 @@
 // Created by Alex Martinez on 14/10/2020.
 //
 
-import N26FlowKitCore
+import FlowKit
 
 struct NumericNextStepsCondition: Decodable, Equatable {
     let answerStepId: String

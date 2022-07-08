@@ -3,7 +3,7 @@
 //
 
 import Foundation
-import N26FlowKitCore
+import FlowKit
 
 public struct StepMock: StepProtocol, Decodable {
     public struct DisplayConditionMock: DisplayConditionProtocol {

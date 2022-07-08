@@ -102,7 +102,7 @@ let flowData = FlowData<YourStep>(id: "idFlow", initialStepId: "stepId1", stepsI
 
 Create the flow:
 ```swift
-let flow = Flow<YourFlowDefinition>(flowData: flowData, featureStepFactory: YourFactory())
+let flow = FlowKit<YourFlowDefinition>(flowData: flowData, featureStepFactory: YourFactory())
 ```
 
 Wherever you want to start the flow you have to call the method `start`

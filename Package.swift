@@ -2,15 +2,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "N26FlowKitCore",
+    name: "FlowKit",
     platforms: [
         .iOS(.v12)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "N26FlowKitCore",
-            targets: ["N26FlowKitCore"])
+            name: "FlowKit",
+            targets: ["FlowKit"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -19,12 +19,12 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "N26FlowKitCore",
+            name: "FlowKit",
             path: "flowkit-ios/Classes"
         ),
         .testTarget(
             name: "flowkit-ios-Tests",
-            dependencies: ["N26FlowKitCore", "Quick", "Nimble"],
+            dependencies: ["FlowKit", "Quick", "Nimble"],
             path: "flowkit-ios/Tests"
         )
     ]

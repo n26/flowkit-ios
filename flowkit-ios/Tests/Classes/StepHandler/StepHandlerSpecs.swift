@@ -2,7 +2,7 @@
 // Created by Alex Martinez on 26/05/2020.
 //
 
-@testable import N26FlowKitCore
+@testable import FlowKit
 import Nimble
 import Quick
 import UIKit

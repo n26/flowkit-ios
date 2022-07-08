@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'flowkit-ios'
   s.version          = '0.1.0'
-  s.summary          = 'flowkit-ios core'
+  s.summary          = 'flowkit-ios'
 
   s.description      = "This is the N26 FlowKit core for the community"
 

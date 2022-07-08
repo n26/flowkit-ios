@@ -2,7 +2,7 @@
 // Created by Alex Martinez on 11/06/2020.
 //
 
-import N26FlowKitCore
+import FlowKit
 
 public struct DisplayCondition: Decodable, Equatable, DisplayConditionProtocol {
     enum CodingKeys: String, CodingKey {

@@ -196,3 +196,8 @@ TBD
 TBD
 ## Blog
 TBD
+
+## Contributing
+
+Contributions are welcome and appreciated.
+Check [CONTRIBUTING](CONTRIBUTING.md) for information on how to contribute.

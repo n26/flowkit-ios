@@ -2,11 +2,11 @@
 // Created by Giulio Lombardo  on 13/01/22.
 //
 
-@testable import N26FlowKitCore
+@testable import FlowKit
 import XCTest
 
-final class FlowCoreTests: XCTestCase {
-    func test_flowCore_complete_withCorrectOutput() {
+final class FlowKitTests: XCTestCase {
+    func test_flowKit_complete_withCorrectOutput() {
         let stepsInfo = (1...5).map({ idx in
             try! StepMock(
                 id: "test" + idx.description,
@@ -28,7 +28,7 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
         
-        let flow = FlowCore<FlowEmptyOutputDefinitionMock>(
+        let flow = FlowKit<FlowEmptyOutputDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestStepFactoryMock(output: "output")
         )
@@ -49,7 +49,7 @@ final class FlowCoreTests: XCTestCase {
         })
     }
     
-    func test_flowCore_complete_withCorrectOutput_rightOrder() {
+    func test_flowKit_complete_withCorrectOutput_rightOrder() {
         let stepsInfo = (1...5).map({ idx in
             try! StepMock(
                 id: "test" + idx.description,
@@ -71,7 +71,7 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
         
-        let flow = FlowCore<FlowEmptyOutputDefinitionMock>(
+        let flow = FlowKit<FlowEmptyOutputDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestStepFactoryMock(output: "output_#")
         )
@@ -92,7 +92,7 @@ final class FlowCoreTests: XCTestCase {
         })
     }
     
-    func test_flowCore_complete_withCorrectOutput_differentOutputs() {
+    func test_flowKit_complete_withCorrectOutput_differentOutputs() {
         let stepsInfo = [
             try! StepMock(
                 id: "test1",
@@ -133,7 +133,7 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
         
-        let flow = FlowCore<FlowEmptyOutputDefinitionMock>(
+        let flow = FlowKit<FlowEmptyOutputDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestStepFactoryMock(output: "output")
         )
@@ -151,7 +151,7 @@ final class FlowCoreTests: XCTestCase {
         XCTAssertEqual(output?.first?.value as? String, "output")
     }
     
-    func test_flowCore_flowOutputData_withVariousTypes() {
+    func test_flowKit_flowOutputData_withVariousTypes() {
         let stepsInfo = [
             try! StepMock(
                 id: "test1",
@@ -216,7 +216,7 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
         
-        let flow = FlowCore<FlowDefinitionMock>(
+        let flow = FlowKit<FlowDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestFlowDefinitionStepFactoryMock(output: "output")
         )
@@ -237,7 +237,7 @@ final class FlowCoreTests: XCTestCase {
         XCTAssertEqual(output?["test5"] as? String, "text:output - message:output")
     }
     
-    func test_flowCore_flowOutputData_withUnknownTypes() {
+    func test_flowKit_flowOutputData_withUnknownTypes() {
         let stepsInfo = [
             try! StepMock(
                 id: "test1",
@@ -302,7 +302,7 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
         
-        let flow = FlowCore<FlowDefinitionMock>(
+        let flow = FlowKit<FlowDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestFlowDefinitionStepFactoryMock(output: "output")
         )
@@ -322,7 +322,7 @@ final class FlowCoreTests: XCTestCase {
         XCTAssertEqual(output?["test3"] as? String, "output")
     }
     
-    func test_flowCore_flowOutputData_typedOutput() {
+    func test_flowKit_flowOutputData_typedOutput() {
         let stepsInfo = [
             try! StepMock(
                 id: "test1",
@@ -387,7 +387,7 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
         
-        let flow = FlowCore<FlowDefinitionMock>(
+        let flow = FlowKit<FlowDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestFlowDefinitionStepFactoryMock(output: "output")
         )
@@ -406,7 +406,7 @@ final class FlowCoreTests: XCTestCase {
         XCTAssertNil(output?.notUsedType)
     }
     
-    func test_flowCore_flowID() {
+    func test_flowKit_flowID() {
         let stepsInfo = [
             try! StepMock(
                 id: "test1",
@@ -428,7 +428,7 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
         
-        let flow = FlowCore<FlowEmptyOutputDefinitionMock>(
+        let flow = FlowKit<FlowEmptyOutputDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestStepFactoryMock()
         )
@@ -445,7 +445,7 @@ final class FlowCoreTests: XCTestCase {
         XCTAssertEqual(flowID, "test")
     }
     
-    func test_flowCore_withShouldBeDisplayed() {
+    func test_flowKit_withShouldBeDisplayed() {
         let stepsInfo = [
             try! StepMock(
                 id: "test1",
@@ -486,7 +486,7 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
         
-        let flow = FlowCore<FlowEmptyOutputDefinitionMock>(
+        let flow = FlowKit<FlowEmptyOutputDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestStepFactoryMock(output: "output")
         )
@@ -506,7 +506,7 @@ final class FlowCoreTests: XCTestCase {
         XCTAssertEqual(output?["test3"] as? String, "output")
     }
     
-    func test_flowCoreCore_errorFlow() {
+    func test_flowKit_errorFlow() {
         let stepsInfo = [
             try! StepMock(
                 id: "test1",
@@ -535,7 +535,7 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
         
-        let flow = FlowCore<FlowEmptyOutputDefinitionMock>(
+        let flow = FlowKit<FlowEmptyOutputDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestStepFactoryMock()
         )
@@ -552,7 +552,7 @@ final class FlowCoreTests: XCTestCase {
         XCTAssertNil(output)
     }
     
-    func test_flowCore_nextStep_withMultipleMatching() {
+    func test_flowKit_nextStep_withMultipleMatching() {
         let test1StepInfo = try! StepMock(
             id: "test1",
             type: "test",
@@ -602,7 +602,7 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
         
-        let flow = FlowCore<FlowEmptyOutputDefinitionMock>(
+        let flow = FlowKit<FlowEmptyOutputDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestStepFactoryMock(output: "output")
         )
@@ -614,7 +614,7 @@ final class FlowCoreTests: XCTestCase {
             viewControllerPushed.toggle()
         }
         
-        var expectedError: FlowCore<FlowEmptyOutputDefinitionMock>.FlowCoreError?
+        var expectedError: FlowKit<FlowEmptyOutputDefinitionMock>.FlowError?
         var expectedNavigation: UINavigationController?
         flow.start(
             on: navigationController,
@@ -628,7 +628,7 @@ final class FlowCoreTests: XCTestCase {
         XCTAssertFalse(viewControllerPushed)
         XCTAssertNotNil(expectedError)
 
-        guard let expectedError = expectedError, case FlowCore<FlowEmptyOutputDefinitionMock>.FlowCoreError.multipleMatchingConditions(let stepInfo) = expectedError else {
+        guard let expectedError = expectedError, case FlowKit<FlowEmptyOutputDefinitionMock>.FlowError.multipleMatchingConditions(let stepInfo) = expectedError else {
             XCTFail("Error must be multipleMatchingConditions error")
             return
         }
@@ -636,7 +636,7 @@ final class FlowCoreTests: XCTestCase {
         XCTAssertEqual(navigationController, expectedNavigation)
     }
     
-    func test_flowCore_nextStep_withMultipleDefaultPath() {
+    func test_flowKit_nextStep_withMultipleDefaultPath() {
         let test1StepInfo = try! StepMock(
             id: "test1",
             type: "test",
@@ -683,7 +683,7 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
         
-        let flow = FlowCore<FlowEmptyOutputDefinitionMock>(
+        let flow = FlowKit<FlowEmptyOutputDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestStepFactoryMock()
         )
@@ -695,7 +695,7 @@ final class FlowCoreTests: XCTestCase {
             viewControllerPushed.toggle()
         }
         
-        var expectedError: FlowCore<FlowEmptyOutputDefinitionMock>.FlowCoreError?
+        var expectedError: FlowKit<FlowEmptyOutputDefinitionMock>.FlowError?
 
         flow.start(
             on: navigationController,
@@ -708,14 +708,14 @@ final class FlowCoreTests: XCTestCase {
         XCTAssertFalse(viewControllerPushed)
         XCTAssertNotNil(expectedError)
 
-        guard let expectedError = expectedError, case FlowCore<FlowEmptyOutputDefinitionMock>.FlowCoreError.multipleMatchingConditions(let stepInfo) = expectedError else {
+        guard let expectedError = expectedError, case FlowKit<FlowEmptyOutputDefinitionMock>.FlowError.multipleMatchingConditions(let stepInfo) = expectedError else {
             XCTFail("Error must be multipleMatchingConditions error")
             return
         }
         XCTAssertEqual(stepInfo, test1StepInfo)
     }
     
-    func test_flowCore_nextStep_returnsDefaultPathStepID() {
+    func test_flowKit_nextStep_returnsDefaultPathStepID() {
         let stepsInfo = [
             try! StepMock(
                 id: "test1",
@@ -762,7 +762,7 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
         
-        let flow = FlowCore<FlowEmptyOutputDefinitionMock>(
+        let flow = FlowKit<FlowEmptyOutputDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestStepFactoryMock(output: "output")
         )
@@ -781,7 +781,7 @@ final class FlowCoreTests: XCTestCase {
         XCTAssertEqual(output?["test3"] as? String, "output")
     }
     
-    func test_flowCore_nextStep_withMatchingConditions() {
+    func test_flowKit_nextStep_withMatchingConditions() {
         let stepsInfo = [
             try! StepMock(
                 id: "test1",
@@ -828,7 +828,7 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
         
-        let flow = FlowCore<FlowEmptyOutputDefinitionMock>(
+        let flow = FlowKit<FlowEmptyOutputDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestStepFactoryMock(output: "output")
         )
@@ -848,7 +848,7 @@ final class FlowCoreTests: XCTestCase {
         XCTAssertEqual(output?["test3"] as? String, "output")
     }
     
-    func test_flowCore_nextStep_withMatchingConditions_noResult() {
+    func test_flowKit_nextStep_withMatchingConditions_noResult() {
         let stepsInfo = [
             try! StepMock(
                 id: "test1",
@@ -897,7 +897,7 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
         
-        let flow = FlowCore<FlowEmptyOutputDefinitionMock>(
+        let flow = FlowKit<FlowEmptyOutputDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestStepFactoryMock(output: "output")
         )
@@ -916,7 +916,7 @@ final class FlowCoreTests: XCTestCase {
         XCTAssertEqual(output?["test1"] as? String, "output")
     }
     
-    func test_flowCore_willPerformStepCalled() {
+    func test_flowKit_willPerformStepCalled() {
         let stepsInfo = [
             try! StepMock(
                 id: "test1",
@@ -933,7 +933,7 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
         
-        let flow = FlowCore<FlowEmptyOutputDefinitionMock>(
+        let flow = FlowKit<FlowEmptyOutputDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestStepFactoryMock()
         )
@@ -951,7 +951,7 @@ final class FlowCoreTests: XCTestCase {
         XCTAssertTrue(willPerformStepCalled)
     }
     
-    func test_flowCore_willPerformStepCalled_withCorrectSteps() {
+    func test_flowKit_willPerformStepCalled_withCorrectSteps() {
         let step = try! StepMock(
             id: "test1",
             type: "test",
@@ -970,7 +970,7 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
         
-        let flow = FlowCore<FlowEmptyOutputDefinitionMock>(
+        let flow = FlowKit<FlowEmptyOutputDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestStepFactoryMock()
         )
@@ -989,7 +989,7 @@ final class FlowCoreTests: XCTestCase {
     }
 
     // MARK: - Error handling
-    func test_flowCore_onErrorHandlerCalled_withCannotCreateFlowError() {
+    func test_flowKit_onErrorHandlerCalled_withCannotCreateFlowError() {
         let step = try! StepMock(
             id: "test1",
             type: "test",
@@ -1008,12 +1008,12 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
 
-        let flow = FlowCore<FlowEmptyOutputDefinitionMock>(
+        let flow = FlowKit<FlowEmptyOutputDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestStepFactoryMock()
         )
 
-        var expectedError: FlowCore<FlowEmptyOutputDefinitionMock>.FlowCoreError?
+        var expectedError: FlowKit<FlowEmptyOutputDefinitionMock>.FlowError?
         var expectedNavigation: UINavigationController?
         let navigation = UINavigationController()
         flow.start(
@@ -1026,7 +1026,7 @@ final class FlowCoreTests: XCTestCase {
         )
 
         guard case let .cannotCreateFlow(stepError) = expectedError else {
-            XCTFail("FlowCoreError must be cannotCreateFlow")
+            XCTFail("flowKitError must be cannotCreateFlow")
             return
         }
 
@@ -1034,7 +1034,7 @@ final class FlowCoreTests: XCTestCase {
         XCTAssertEqual(stepError, .initialStepNotFound(stepId: "unknownStepId"))
     }
 
-    func test_flowCore_onErrorHandlerCalled_withCannotCreateStepHandlerError() {
+    func test_flowKit_onErrorHandlerCalled_withCannotCreateStepHandlerError() {
         let step = try! StepMock(
             id: "test1",
             type: "test1",
@@ -1053,12 +1053,12 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
 
-        let flow = FlowCore<FlowEmptyOutputDefinitionMock>(
+        let flow = FlowKit<FlowEmptyOutputDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestStepFactoryMock()
         )
 
-        var expectedError: FlowCore<FlowEmptyOutputDefinitionMock>.FlowCoreError?
+        var expectedError: FlowKit<FlowEmptyOutputDefinitionMock>.FlowError?
         var expectedNavigation: UINavigationController?
         let navigation = UINavigationController()
         flow.start(
@@ -1071,7 +1071,7 @@ final class FlowCoreTests: XCTestCase {
         )
 
         guard case let .cannotCreateStepHandler(stepInfo) = expectedError else {
-            XCTFail("FlowCoreError must be cannotCreateFlow")
+            XCTFail("flowKitError must be cannotCreateFlow")
             return
         }
 
@@ -1079,7 +1079,7 @@ final class FlowCoreTests: XCTestCase {
         XCTAssertEqual(stepInfo, step)
     }
 
-    func test_flowCore_onErrorHandlerCalled_withStepContentNotDecodableError() {
+    func test_flowKit_onErrorHandlerCalled_withStepContentNotDecodableError() {
         let step = try! StepMock(
             id: "testContent",
             type: "testContent",
@@ -1098,12 +1098,12 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
 
-        let flow = FlowCore<FlowEmptyOutputDefinitionMock>(
+        let flow = FlowKit<FlowEmptyOutputDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestStepFactoryMock()
         )
 
-        var expectedError: FlowCore<FlowEmptyOutputDefinitionMock>.FlowCoreError?
+        var expectedError: FlowKit<FlowEmptyOutputDefinitionMock>.FlowError?
         var expectedNavigation: UINavigationController?
         let navigation = UINavigationController()
         flow.start(
@@ -1116,7 +1116,7 @@ final class FlowCoreTests: XCTestCase {
         )
 
         guard case let .stepContentNotDecodable(stepInfo) = expectedError else {
-            XCTFail("FlowCoreError must be cannotCreateFlow")
+            XCTFail("flowKitError must be cannotCreateFlow")
             return
         }
 
@@ -1124,7 +1124,7 @@ final class FlowCoreTests: XCTestCase {
         XCTAssertEqual(stepInfo, step)
     }
 
-    func test_flowCore_whenShouldNotDisplayStepAndNextStepMultipleMatchingConditions_onErrorHandlerCalled_withMultipleMatchingConditionsError() {
+    func test_flowKit_whenShouldNotDisplayStepAndNextStepMultipleMatchingConditions_onErrorHandlerCalled_withMultipleMatchingConditionsError() {
         let multipleMatchingConditionsStep = try! StepMock(
             id: "test2",
             type: "testShouldNotBeDisplayed",
@@ -1181,12 +1181,12 @@ final class FlowCoreTests: XCTestCase {
             stepsInfo: stepsInfo
         )
 
-        let flow = FlowCore<FlowEmptyOutputDefinitionMock>(
+        let flow = FlowKit<FlowEmptyOutputDefinitionMock>(
             flowData: flowData,
             featureStepFactory: TestStepFactoryMock(output: "output")
         )
 
-        var expectedError: FlowCore<FlowEmptyOutputDefinitionMock>.FlowCoreError?
+        var expectedError: FlowKit<FlowEmptyOutputDefinitionMock>.FlowError?
         var expectedNavigation: UINavigationController?
         let navigationController = UINavigationController()
         flow.start(

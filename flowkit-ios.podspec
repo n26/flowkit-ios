@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = 'flowkit-ios'
   s.version          = '0.1.0'
-  s.summary          = 'flowkit-ios core'
+  s.summary          = 'flowkit-ios library'
 
-  s.description      = "This is the N26 flowkit core for the community"
+  s.description      = "This is the N26 FlowKit for the community"
 
   s.homepage         = 'https://github.com/n26/flowkit-ios/tree/main'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
 
-  s.module_name = 'N26FlowKitCore'
+  s.module_name = 'FlowKit'
 
   s.source_files = 'flowkit-ios/Classes/**/*'
 

@@ -2,7 +2,7 @@
 // Created by Alex Martinez on 14/05/2020.
 //
 
-import N26FlowKitCore
+import FlowKit
 
 public struct Step: StepProtocol, Decodable, Equatable {
     public static func == (lhs: Self, rhs: Self) -> Bool {

@@ -2,7 +2,7 @@
 // Created by Alex Martinez on 18/05/2020.
 //
 
-@testable import N26FlowKitCore
+@testable import FlowKit
 
 final class TestStepFactory: StepFactory {
     typealias OUTPUT = FlowOutputEmptyDefinition

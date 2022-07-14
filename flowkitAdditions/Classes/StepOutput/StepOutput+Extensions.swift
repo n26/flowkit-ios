@@ -5,7 +5,7 @@
 //  Created by Giulio Lombardo  on 29/04/22.
 //
 
-import N26FlowKitCore
+import FlowKit
 
 extension DateInterval: StepOutput { }
 

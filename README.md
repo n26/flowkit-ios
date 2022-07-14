@@ -26,20 +26,20 @@ Define a flow output that FlowKit will use to generate a typed output with autoc
 Create your flow steps with dynamic content and control step display and output.
 ## How to use it
 ### 1. Define your flow
-Define your flow using `[FlowDefinition](https://github.com/n26/flowkit-ios/blob/main/flowkit-ios/Classes/Flow/FlowDefinition.swift)`
+Define your flow using [`FlowDefinition`](https://github.com/n26/flowkit-ios/blob/main/flowkit-ios/Classes/Flow/FlowDefinition.swift)
 ```swift
 struct YourFlowDefinition: FlowDefinition {
     typealias OUTPUT = YourFlowOutput
     typealias STEP = YourStepImplementation
 }
 ```
-where `OUTPUT` is your flow output type and `STEP` is your step implementation (You could use the one provided in `[FlowKitAdditions](https://github.com/n26/flowkit-ios/tree/main/flowkitAdditions/Classes)`)
+where `OUTPUT` is your flow output type and `STEP` is your step implementation (You could use the one provided in [`FlowKitAdditions`](https://github.com/n26/flowkit-ios/tree/main/flowkitAdditions/Classes))
 
 ### 2. Create your steps
 A `StepHandler` is in charge of building the step, notify with the completion that the step is completed and flow should show next step
 If your step is a screen, you should place the logic to present it there.
 
-First you have to define your step, so create a struct that conforms to `[StepHandlerDefinition](https://github.com/n26/flowkit-ios/blob/main/flowkit-ios/Classes/StepHandler/StepHandlerDefinition.swift)`. It will force you to define the content, the step output and the flow output.
+First you have to define your step, so create a struct that conforms to [`StepHandlerDefinition`](https://github.com/n26/flowkit-ios/blob/main/flowkit-ios/Classes/StepHandler/StepHandlerDefinition.swift). It will force you to define the content, the step output and the flow output.
 ```swift
 struct YourStepHandlerDefinition: StepHandlerDefinition {
     typealias CONTENT = YourContent
@@ -50,8 +50,8 @@ struct YourStepHandlerDefinition: StepHandlerDefinition {
 }
 ```
 
-- The FLOW_OUTPUT and STEP types must be the same as the once defined in `[YourFlowDefinition](https://github.com/n26/flowkit-ios#1-define-your-flow)`.
-- The STEP_OUTPUT is your step output type. If your step doesn't have an output, use the `[StepOutputEmpty](https://github.com/n26/flowkit-ios/blob/fb8b1f7d02b8bf4fc4d346adddadbda8bd5de030/flowkit-ios/Classes/Step/StepOutput.swift#L11)`.
+- The FLOW_OUTPUT and STEP types must be the same as the once defined in [`YourFlowDefinition`](https://github.com/n26/flowkit-ios#1-define-your-flow).
+- The STEP_OUTPUT is your step output type. If your step doesn't have an output, use the [`StepOutputEmpty`](https://github.com/n26/flowkit-ios/blob/fb8b1f7d02b8bf4fc4d346adddadbda8bd5de030/flowkit-ios/Classes/Step/StepOutput.swift#L11).
 - The CONTENT is the dynamic content of the step, where you should place all the specific data that your step needs to be performed. For example, the image URL or text content we want to display in our step.
 
 If your step has defined an output that you would like to set in `YourFlowOutputDefinition` you have to specify it.
@@ -206,8 +206,8 @@ targets: [
     .target(
         name: "YOUR_MODULE",
         dependencies: [
-            "FlowKit",
-        ]),
+            "FlowKit"
+        ])
 ],
 ```
 

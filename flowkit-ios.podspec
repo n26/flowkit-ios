@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name             = 'flowkit-ios'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'flowkit-ios library'
 
   s.description      = "This is the N26 FlowKit for the community"
 
   s.homepage         = 'https://github.com/n26/flowkit-ios/tree/main'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'NA' => 'alejandro.martinez@n26.com' }
+  s.author           = { 'NA' => 'N26 GmbH' }
   s.source           = { :git => 'git@github.com:n26/flowkit-ios.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.0'

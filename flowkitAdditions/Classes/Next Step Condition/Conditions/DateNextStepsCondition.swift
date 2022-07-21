@@ -3,6 +3,7 @@
 //
 
 import FlowKit
+import Foundation
 
 struct DateNextStepsCondition: Decodable, Equatable {
     enum CodingKeys: String, CodingKey {

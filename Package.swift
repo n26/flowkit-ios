@@ -10,7 +10,12 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "FlowKit",
-            targets: ["FlowKit"])
+            targets: ["FlowKit"]
+        ),
+        .library(
+            name: "FlowKitAdditions",
+            targets: ["FlowKitAdditions"]
+        )
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -26,6 +31,11 @@ let package = Package(
             name: "flowkit-ios-Tests",
             dependencies: ["FlowKit", "Quick", "Nimble"],
             path: "flowkit-ios/Tests"
+        ),
+        .target(
+            name: "FlowKitAdditions",
+            dependencies: ["FlowKit"],
+            path: "flowkitAdditions/Classes"
         )
     ]
 )

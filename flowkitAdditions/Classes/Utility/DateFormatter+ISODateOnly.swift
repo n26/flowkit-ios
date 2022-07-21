@@ -5,6 +5,8 @@
 //  Created by Giulio Lombardo  on 28/04/22.
 //
 
+import Foundation
+
 extension DateFormatter {
     static var ISODateOnly: DateFormatter {
         let formatter = DateFormatter()

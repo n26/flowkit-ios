@@ -2,6 +2,8 @@
 // Created by Alex Martinez on 17/12/2020.
 //
 
+import Foundation
+
 public struct BoolDisplayCondition: Decodable, Equatable {
     public let value: Bool
     

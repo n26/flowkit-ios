@@ -3,6 +3,7 @@
 //
 
 import FlowKit
+import Foundation
 
 public struct NextStepCondition: NextStepConditionProtocol {
     enum CodingKeys: String, CodingKey {

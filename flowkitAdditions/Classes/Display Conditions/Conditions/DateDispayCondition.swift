@@ -2,6 +2,8 @@
 // Created by Alex Martinez on 11/06/2020.
 //
 
+import Foundation
+
 public struct DateDisplayCondition: Decodable, Equatable {
     enum CodingKeys: String, CodingKey {
         case minDate

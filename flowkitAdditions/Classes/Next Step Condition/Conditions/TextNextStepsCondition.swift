@@ -3,6 +3,7 @@
 //
 
 import FlowKit
+import Foundation
 
 struct TextNextStepsCondition: Codable, Equatable {
     let answerStepId: String

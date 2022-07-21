@@ -6,6 +6,7 @@
 //
 
 import FlowKit
+import Foundation
 
 extension DateInterval: StepOutput { }
 

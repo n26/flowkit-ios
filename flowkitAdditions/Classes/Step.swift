@@ -3,6 +3,7 @@
 //
 
 import FlowKit
+import Foundation
 
 public struct Step: StepProtocol, Decodable, Equatable {
     public static func == (lhs: Self, rhs: Self) -> Bool {

@@ -3,6 +3,7 @@
 //
 
 import FlowKit
+import Foundation
 
 public struct DisplayCondition: Decodable, Equatable, DisplayConditionProtocol {
     enum CodingKeys: String, CodingKey {

@@ -3,6 +3,7 @@
 //
 
 import FlowKit
+import Foundation
 
 struct NumericNextStepsCondition: Decodable, Equatable {
     let answerStepId: String

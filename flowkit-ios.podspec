@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = 'flowkit-ios'
   s.version          = '1.0.0'
-  s.summary          = 'flowkit-ios library'
+  s.summary          = 'Dynamic and type-safe framework for building linear and non-linear flows'
 
-  s.description      = "This is the N26 FlowKit for the community"
+  s.description      = "FlowKit is a dynamic flow framework capable of building a flow, based on conditions and ordered according to a logic of next steps"
 
   s.homepage         = 'https://github.com/n26/flowkit-ios/tree/main'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

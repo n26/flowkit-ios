@@ -2,7 +2,9 @@
 // Created by Alex Martinez on 14/05/2020.
 //
 
+#if !COCOAPODS
 import FlowKit
+#endif
 import Foundation
 
 public struct Step: StepProtocol, Decodable, Equatable {

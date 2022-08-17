@@ -1,10 +1,8 @@
 use_frameworks!
 
-#TODO: Remove it as soon as the repository is public
-source 'git@github.com:n26/flowkit-ios.git'
-
 platform :ios, '12.0'
 
 target 'flowkitAdditions_Example' do
-  pod 'flowkitAdditions', :path => '../../'
+  pod 'flowkit-ios', :path => '../../'
+  pod 'flowkit-ios/Additions', :path => '../../'
 end

@@ -2,7 +2,9 @@
 // Created by Alex Martinez on 14/10/2020.
 //
 
+#if !COCOAPODS
 import FlowKit
+#endif
 import Foundation
 
 struct TextNextStepsCondition: Codable, Equatable {

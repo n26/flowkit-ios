@@ -1,9 +1,5 @@
 //
-//  AppDelegate.swift
-//  flowkitAdditions
-//
-//  Created by giulio.lombardo@gmail.com on 04/28/2022.
-//  Copyright (c) 2022 giulio.lombardo@gmail.com. All rights reserved.
+//  Created by Giulio on 04/28/2022.
 //
 
 import UIKit
@@ -13,9 +9,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = FlowListWireframe.createRootView()
+        window?.makeKeyAndVisible()
         return true
     }
 
@@ -40,7 +39,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 

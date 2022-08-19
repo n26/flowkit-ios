@@ -1,23 +1,19 @@
 PODS:
-  - flowkit-ios (0.1.0)
-  - flowkitAdditions (0.1.0):
-    - flowkit-ios (= 0.1.0)
+  - flowkit-ios (1.0.1):
+    - flowkit-ios/Additions (= 1.0.1)
+  - flowkit-ios/Additions (1.0.1)
 
 DEPENDENCIES:
-  - flowkitAdditions (from `../../`)
-
-SPEC REPOS:
-  "git@github.com:n26/flowkit-ios.git":
-    - flowkit-ios
+  - flowkit-ios (from `../../`)
+  - flowkit-ios/Additions (from `../../`)
 
 EXTERNAL SOURCES:
-  flowkitAdditions:
+  flowkit-ios:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  flowkit-ios: dbd655915c73df2e1e0bfe66346e80e412147df6
-  flowkitAdditions: 6c1bfbe46e7da794e1d6b6f740d304c31e6e4a1f
+  flowkit-ios: 1c3707555f5b40392516226f908c1ca729efb7d8
 
-PODFILE CHECKSUM: e3d5b6bad237dbab9f7bdd2a3d0ec275a127161d
+PODFILE CHECKSUM: 3d7d619066e0cd50c1cf63da3dc028a787f6f0e5
 
 COCOAPODS: 1.11.3

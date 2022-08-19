@@ -1,0 +1,63 @@
+{
+    "id": "SIGN_UP_FLOW",
+    "initialStepId": "infoStepId",
+    "steps": [
+        {
+            "id": "infoStepId",
+            "nextStep": "firstNameId",
+            "type": "INFO",
+            "content": {
+                "title": "Welcome to the signup flow example",
+                "description": "The purpose of this flow is showcasing how to create a Flow with different kind of steps.",
+                "primaryButtonText": "Let's start"
+            }
+        },
+        {
+            "id": "firstNameId",
+            "nextStep": "lastNameId",
+            "type": "TEXT_INPUT",
+            "content": {
+                "title": "We would like to start with your first name",
+                "placeholder": "Write your first name",
+                "primaryButtonText": "Continue"
+            }
+        },
+        {
+            "id": "lastNameId",
+            "nextStep": "emailId",
+            "type": "TEXT_INPUT",
+            "content": {
+                "title": "And your last name",
+                "placeholder": "Write your last name",
+                "primaryButtonText": "Continue",
+                "skipButtonText": "Omit step"
+            }
+        },
+        {
+            "id": "emailId",
+            "nextStep": "passwordId",
+            "type": "TEXT_INPUT",
+            "content": {
+                "title": "Which email do you want to register with",
+                "subtitle": "We will only send significant emails",
+                "placeholder": "Write your email",
+                "primaryButtonText": "Continue"
+            }
+        },
+        {
+            "id": "passwordId",
+            "type": "TEXT_INPUT",
+            "nextStep": "summaryStepId",
+            "content": {
+                "title": "Choose your secure password",
+                "placeholder": "Write your password",
+                "primaryButtonText": "Register in FlowKit"
+            }
+        },
+        {
+            "id": "summaryStepId",
+            "type": "SUMMARY",
+            "content": { }
+        }
+    ]
+}

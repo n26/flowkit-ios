@@ -2,7 +2,9 @@
 // Created by Alex Martinez on 11/06/2020.
 //
 
+#if !COCOAPODS
 import FlowKit
+#endif
 import Foundation
 
 public struct DisplayCondition: Decodable, Equatable, DisplayConditionProtocol {

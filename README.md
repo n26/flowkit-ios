@@ -24,7 +24,10 @@ FlowKit allows you to create non-linear flows by specifying multiple `nextSteps`
 Define a flow output that FlowKit will use to generate a typed output with autocompletion support while you are developing.
 #### Steps
 Create your flow steps with dynamic content and control step display and output.
+
 ## How to use it
+We have added an [Example project](https://github.com/n26/flowkit-ios/tree/main/flowkitAdditions/Example) to demostrate how to use FlowKit in your project.
+
 ### 1. Define your flow
 Define your flow using [`FlowDefinition`](https://github.com/n26/flowkit-ios/blob/main/flowkit-ios/Classes/Flow/FlowDefinition.swift)
 ```swift
@@ -213,7 +216,7 @@ targets: [
 
 ## License
 
-Copyright (c) 2022 N26 GmbH, licensed under the [MIT license](LICENSE.md).
+Copyright (c) 2022 N26 GmbH, licensed under the [MIT license](LICENSE).
 
 ## Contributing
 

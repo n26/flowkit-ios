@@ -7,88 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49552C83486E5614E5886C26 /* Pods_flowkitSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB91762F359F983EB9CDB4F /* Pods_flowkitSwiftUI.framework */; };
+		4E499190C909CD4E848873F6 /* Pods_flowkitUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E436CD1573FAA95949103CD /* Pods_flowkitUIKit.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Assets.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		9A5AAFC0288A889700A0E74F /* LocalFlowLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AAFBF288A889700A0E74F /* LocalFlowLoader.swift */; };
-		9A5AAFC4288A977800A0E74F /* TextInputContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AAFC3288A977800A0E74F /* TextInputContent.swift */; };
-		9A5AAFC6288A979D00A0E74F /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AAFC5288A979D00A0E74F /* TextInputView.swift */; };
-		9A5AAFC8288A97AE00A0E74F /* TextInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AAFC7288A97AE00A0E74F /* TextInputViewModel.swift */; };
-		9A5AAFCA288A9A9000A0E74F /* TextInputStepHandlerDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AAFC9288A9A9000A0E74F /* TextInputStepHandlerDefinition.swift */; };
-		9A5AAFCF288AB7E300A0E74F /* InfoContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AAFCE288AB7E300A0E74F /* InfoContent.swift */; };
-		9A5AAFD3288AB80700A0E74F /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AAFD2288AB80700A0E74F /* InfoViewModel.swift */; };
-		9A5AAFD5288AB81700A0E74F /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AAFD4288AB81700A0E74F /* InfoView.swift */; };
-		9A5AAFD7288AB82A00A0E74F /* InfoWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AAFD6288AB82A00A0E74F /* InfoWireframe.swift */; };
-		9A5AAFD9288AB83D00A0E74F /* InfoStepHandlerDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AAFD8288AB83D00A0E74F /* InfoStepHandlerDefinition.swift */; };
-		9A5AAFDB288ACE6700A0E74F /* FlowErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AAFDA288ACE6700A0E74F /* FlowErrorView.swift */; };
-		9A5AAFDD288ACE7800A0E74F /* FlowErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AAFDC288ACE7800A0E74F /* FlowErrorViewModel.swift */; };
-		9A5AAFDF288AD0B100A0E74F /* FlowErrorWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AAFDE288AD0B100A0E74F /* FlowErrorWireframe.swift */; };
+		9A137FF028E5B899003D0C8A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		9A13800E28E5B91C003D0C8A /* SignUpFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13800028E5B91C003D0C8A /* SignUpFlow.swift */; };
+		9A13800F28E5B91C003D0C8A /* FlowListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13800228E5B91C003D0C8A /* FlowListViewModel.swift */; };
+		9A13801028E5B91C003D0C8A /* FlowListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13800328E5B91C003D0C8A /* FlowListWireframe.swift */; };
+		9A13801128E5B91C003D0C8A /* FlowListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13800428E5B91C003D0C8A /* FlowListView.swift */; };
+		9A13801328E5B91C003D0C8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A13800628E5B91C003D0C8A /* Assets.xcassets */; };
+		9A13801528E5B91C003D0C8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13800928E5B91C003D0C8A /* AppDelegate.swift */; };
 		9A5AAFE2288AF18E00A0E74F /* FlowListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AAFE1288AF18E00A0E74F /* FlowListView.swift */; };
 		9A5AAFE4288AF19A00A0E74F /* FlowListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AAFE3288AF19A00A0E74F /* FlowListViewModel.swift */; };
 		9A5AAFE6288AF1D600A0E74F /* FlowListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AAFE5288AF1D600A0E74F /* FlowListWireframe.swift */; };
-		9AB8028A288C78BC005D7043 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB80289288C78BC005D7043 /* Color+Extension.swift */; };
-		9AB8028C288C7902005D7043 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8028B288C7902005D7043 /* PrimaryButton.swift */; };
-		9AB8028E288C79FF005D7043 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8028D288C79FF005D7043 /* SecondaryButton.swift */; };
-		9AB80290288C7D22005D7043 /* ButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8028F288C7D22005D7043 /* ButtonViewModel.swift */; };
-		9AB80293288C7F03005D7043 /* FlowSummaryWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB80292288C7F03005D7043 /* FlowSummaryWireframe.swift */; };
-		9AB80295288C7F15005D7043 /* FlowSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB80294288C7F15005D7043 /* FlowSummaryViewModel.swift */; };
-		9AB80299288C7FAD005D7043 /* FlowSummaryStepHandlerDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB80298288C7FAD005D7043 /* FlowSummaryStepHandlerDefinition.swift */; };
-		9AB8029B288C95F8005D7043 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8029A288C95F8005D7043 /* TitleText.swift */; };
-		9AB8029D288C97B5005D7043 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8029C288C97B5005D7043 /* Font+Extension.swift */; };
-		9AB8029F288C97F2005D7043 /* BodyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8029E288C97F2005D7043 /* BodyText.swift */; };
-		9AB802A3288CA715005D7043 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB802A2288CA715005D7043 /* TextInput.swift */; };
-		9D18C67C14D2688E1AC02515 /* Pods_flowkitAdditions_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDDDAC4C02B89C741042514 /* Pods_flowkitAdditions_Example.framework */; };
-		D39EEBE828917F3500725885 /* FlowSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39EEBE728917F3500725885 /* FlowSummaryView.swift */; };
-		D39EEBEA28917F7700725885 /* TextInputWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39EEBE928917F7700725885 /* TextInputWireframe.swift */; };
-		D39EEBEC28917FCD00725885 /* SignUpStepFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39EEBEB28917FCD00725885 /* SignUpStepFactory.swift */; };
-		D39EEBEF2891802B00725885 /* signUpFlowResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = D39EEBED2891802B00725885 /* signUpFlowResponse.json */; };
-		D39EEBF02891802B00725885 /* SignUpFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39EEBEE2891802B00725885 /* SignUpFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		094AEE3B4BAFF66062B58D3B /* Pods_flowkitAdditions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flowkitAdditions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E436CD1573FAA95949103CD /* Pods_flowkitUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flowkitUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E4A0359E0FC7EE090121DF4 /* Pods-flowkitAdditions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowkitAdditions_Example.release.xcconfig"; path = "Target Support Files/Pods-flowkitAdditions_Example/Pods-flowkitAdditions_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2FDDDAC4C02B89C741042514 /* Pods_flowkitAdditions_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flowkitAdditions_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46EB0C4BE3D9F606B6416426 /* Pods-flowkitUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowkitUIKit.debug.xcconfig"; path = "Target Support Files/Pods-flowkitUIKit/Pods-flowkitUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		481D13CE977B36F8BE51D348 /* Pods-flowkitAdditions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowkitAdditions_Tests.release.xcconfig"; path = "Target Support Files/Pods-flowkitAdditions_Tests/Pods-flowkitAdditions_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* flowkitAdditions_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flowkitAdditions_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* flowkitSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flowkitSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		9A5AAFBF288A889700A0E74F /* LocalFlowLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFlowLoader.swift; sourceTree = "<group>"; };
-		9A5AAFC3288A977800A0E74F /* TextInputContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextInputContent.swift; path = Steps/TextInput/TextInputContent.swift; sourceTree = "<group>"; };
-		9A5AAFC5288A979D00A0E74F /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextInputView.swift; path = Steps/TextInput/TextInputView.swift; sourceTree = "<group>"; };
-		9A5AAFC7288A97AE00A0E74F /* TextInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextInputViewModel.swift; path = Steps/TextInput/TextInputViewModel.swift; sourceTree = "<group>"; };
-		9A5AAFC9288A9A9000A0E74F /* TextInputStepHandlerDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextInputStepHandlerDefinition.swift; path = Steps/TextInput/TextInputStepHandlerDefinition.swift; sourceTree = "<group>"; };
-		9A5AAFCE288AB7E300A0E74F /* InfoContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoContent.swift; path = Steps/Info/InfoContent.swift; sourceTree = "<group>"; };
-		9A5AAFD2288AB80700A0E74F /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoViewModel.swift; path = Steps/Info/InfoViewModel.swift; sourceTree = "<group>"; };
-		9A5AAFD4288AB81700A0E74F /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoView.swift; path = Steps/Info/InfoView.swift; sourceTree = "<group>"; };
-		9A5AAFD6288AB82A00A0E74F /* InfoWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoWireframe.swift; path = Steps/Info/InfoWireframe.swift; sourceTree = "<group>"; };
-		9A5AAFD8288AB83D00A0E74F /* InfoStepHandlerDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoStepHandlerDefinition.swift; path = Steps/Info/InfoStepHandlerDefinition.swift; sourceTree = "<group>"; };
-		9A5AAFDA288ACE6700A0E74F /* FlowErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlowErrorView.swift; path = Error/FlowErrorView.swift; sourceTree = "<group>"; };
-		9A5AAFDC288ACE7800A0E74F /* FlowErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlowErrorViewModel.swift; path = Error/FlowErrorViewModel.swift; sourceTree = "<group>"; };
-		9A5AAFDE288AD0B100A0E74F /* FlowErrorWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlowErrorWireframe.swift; path = Error/FlowErrorWireframe.swift; sourceTree = "<group>"; };
+		649AD231F7FEF3A4AD884FC3 /* Pods-flowkitUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowkitUIKit.release.xcconfig"; path = "Target Support Files/Pods-flowkitUIKit/Pods-flowkitUIKit.release.xcconfig"; sourceTree = "<group>"; };
+		6AB91762F359F983EB9CDB4F /* Pods_flowkitSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flowkitSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A137FF728E5B899003D0C8A /* flowkitUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flowkitUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A13800028E5B91C003D0C8A /* SignUpFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpFlow.swift; sourceTree = "<group>"; };
+		9A13800228E5B91C003D0C8A /* FlowListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowListViewModel.swift; sourceTree = "<group>"; };
+		9A13800328E5B91C003D0C8A /* FlowListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowListWireframe.swift; sourceTree = "<group>"; };
+		9A13800428E5B91C003D0C8A /* FlowListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowListView.swift; sourceTree = "<group>"; };
+		9A13800628E5B91C003D0C8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A13800828E5B91C003D0C8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9A13800928E5B91C003D0C8A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A13801728E5CBAB003D0C8A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A5AAFE1288AF18E00A0E74F /* FlowListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlowListView.swift; path = FlowList/FlowListView.swift; sourceTree = "<group>"; };
 		9A5AAFE3288AF19A00A0E74F /* FlowListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlowListViewModel.swift; path = FlowList/FlowListViewModel.swift; sourceTree = "<group>"; };
 		9A5AAFE5288AF1D600A0E74F /* FlowListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlowListWireframe.swift; path = FlowList/FlowListWireframe.swift; sourceTree = "<group>"; };
-		9AB80289288C78BC005D7043 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Color+Extension.swift"; path = "Extensions/Color+Extension.swift"; sourceTree = "<group>"; };
-		9AB8028B288C7902005D7043 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PrimaryButton.swift; path = Extensions/PrimaryButton.swift; sourceTree = "<group>"; };
-		9AB8028D288C79FF005D7043 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondaryButton.swift; path = Extensions/SecondaryButton.swift; sourceTree = "<group>"; };
-		9AB8028F288C7D22005D7043 /* ButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ButtonViewModel.swift; path = Extensions/ButtonViewModel.swift; sourceTree = "<group>"; };
-		9AB80292288C7F03005D7043 /* FlowSummaryWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlowSummaryWireframe.swift; path = FlowSummary/FlowSummaryWireframe.swift; sourceTree = "<group>"; };
-		9AB80294288C7F15005D7043 /* FlowSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlowSummaryViewModel.swift; path = FlowSummary/FlowSummaryViewModel.swift; sourceTree = "<group>"; };
-		9AB80298288C7FAD005D7043 /* FlowSummaryStepHandlerDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlowSummaryStepHandlerDefinition.swift; path = FlowSummary/FlowSummaryStepHandlerDefinition.swift; sourceTree = "<group>"; };
-		9AB8029A288C95F8005D7043 /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TitleText.swift; path = Extensions/TitleText.swift; sourceTree = "<group>"; };
-		9AB8029C288C97B5005D7043 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Font+Extension.swift"; path = "Extensions/Font+Extension.swift"; sourceTree = "<group>"; };
-		9AB8029E288C97F2005D7043 /* BodyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BodyText.swift; path = Extensions/BodyText.swift; sourceTree = "<group>"; };
-		9AB802A2288CA715005D7043 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextInput.swift; path = Extensions/TextInput.swift; sourceTree = "<group>"; };
 		A415448723539BD6D28F1251 /* Pods-flowkitAdditions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowkitAdditions_Tests.debug.xcconfig"; path = "Target Support Files/Pods-flowkitAdditions_Tests/Pods-flowkitAdditions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A78C339A91C3BB46F66EB5CB /* Pods-flowkitAdditions_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowkitAdditions_Example.debug.xcconfig"; path = "Target Support Files/Pods-flowkitAdditions_Example/Pods-flowkitAdditions_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D39EEBE728917F3500725885 /* FlowSummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowSummaryView.swift; path = FlowSummary/FlowSummaryView.swift; sourceTree = "<group>"; };
-		D39EEBE928917F7700725885 /* TextInputWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextInputWireframe.swift; path = Steps/TextInput/TextInputWireframe.swift; sourceTree = "<group>"; };
-		D39EEBEB28917FCD00725885 /* SignUpStepFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpStepFactory.swift; path = SignupFlow/SignUpStepFactory.swift; sourceTree = "<group>"; };
-		D39EEBED2891802B00725885 /* signUpFlowResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = signUpFlowResponse.json; path = SignupFlow/signUpFlowResponse.json; sourceTree = "<group>"; };
-		D39EEBEE2891802B00725885 /* SignUpFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpFlow.swift; path = SignupFlow/SignUpFlow.swift; sourceTree = "<group>"; };
+		CC1F27DC846E37FF91A46BF3 /* Pods-flowkitSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowkitSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-flowkitSwiftUI/Pods-flowkitSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		F1BE8780350058FA0D615292 /* Pods-flowkitSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowkitSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-flowkitSwiftUI/Pods-flowkitSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +60,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D18C67C14D2688E1AC02515 /* Pods_flowkitAdditions_Example.framework in Frameworks */,
+				49552C83486E5614E5886C26 /* Pods_flowkitSwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A137FED28E5B899003D0C8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E499190C909CD4E848873F6 /* Pods_flowkitUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,8 +78,9 @@
 		0DC6F5A57B4BADBF7609DDE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2FDDDAC4C02B89C741042514 /* Pods_flowkitAdditions_Example.framework */,
 				094AEE3B4BAFF66062B58D3B /* Pods_flowkitAdditions_Tests.framework */,
+				6AB91762F359F983EB9CDB4F /* Pods_flowkitSwiftUI.framework */,
+				0E436CD1573FAA95949103CD /* Pods_flowkitUIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +92,10 @@
 				0E4A0359E0FC7EE090121DF4 /* Pods-flowkitAdditions_Example.release.xcconfig */,
 				A415448723539BD6D28F1251 /* Pods-flowkitAdditions_Tests.debug.xcconfig */,
 				481D13CE977B36F8BE51D348 /* Pods-flowkitAdditions_Tests.release.xcconfig */,
+				F1BE8780350058FA0D615292 /* Pods-flowkitSwiftUI.debug.xcconfig */,
+				CC1F27DC846E37FF91A46BF3 /* Pods-flowkitSwiftUI.release.xcconfig */,
+				46EB0C4BE3D9F606B6416426 /* Pods-flowkitUIKit.debug.xcconfig */,
+				649AD231F7FEF3A4AD884FC3 /* Pods-flowkitUIKit.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -126,7 +103,8 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				607FACD21AFB9204008FA782 /* flowkitAdditions */,
+				9A137FFB28E5B91C003D0C8A /* flowkitAdditionsUIKit */,
+				607FACD21AFB9204008FA782 /* flowkitAdditionsSwiftUI */,
 				607FACD11AFB9204008FA782 /* Products */,
 				400BD452CDCF5122498551E7 /* Pods */,
 				0DC6F5A57B4BADBF7609DDE8 /* Frameworks */,
@@ -136,24 +114,20 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* flowkitAdditions_Example.app */,
+				607FACD01AFB9204008FA782 /* flowkitSwiftUI.app */,
+				9A137FF728E5B899003D0C8A /* flowkitUIKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* flowkitAdditions */ = {
+		607FACD21AFB9204008FA782 /* flowkitAdditionsSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				9AB80288288C78A2005D7043 /* Extensions */,
 				9A5AAFE0288AF16B00A0E74F /* FlowList */,
-				9A5AAFC1288A96B300A0E74F /* Error */,
-				9A5AAFAF288A7F3A00A0E74F /* Steps */,
-				9A5AAFA8288A7E0400A0E74F /* SignupFlow */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD31AFB9204008FA782 /* Resources */,
-				9A5AAFBF288A889700A0E74F /* LocalFlowLoader.swift */,
 			);
-			path = flowkitAdditions;
+			path = flowkitAdditionsSwiftUI;
 			sourceTree = "<group>";
 		};
 		607FACD31AFB9204008FA782 /* Resources */ = {
@@ -166,58 +140,43 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		9A5AAFA8288A7E0400A0E74F /* SignupFlow */ = {
+		9A137FFB28E5B91C003D0C8A /* flowkitAdditionsUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				D39EEBEE2891802B00725885 /* SignUpFlow.swift */,
-				D39EEBED2891802B00725885 /* signUpFlowResponse.json */,
-				D39EEBEB28917FCD00725885 /* SignUpStepFactory.swift */,
+				9A13801928E5CCED003D0C8A /* Resources */,
+				9A137FFC28E5B91C003D0C8A /* SignupFlow */,
+				9A13800128E5B91C003D0C8A /* FlowList */,
+				9A13800928E5B91C003D0C8A /* AppDelegate.swift */,
 			);
-			name = SignupFlow;
+			path = flowkitAdditionsUIKit;
 			sourceTree = "<group>";
 		};
-		9A5AAFAF288A7F3A00A0E74F /* Steps */ = {
+		9A137FFC28E5B91C003D0C8A /* SignupFlow */ = {
 			isa = PBXGroup;
 			children = (
-				9AB80291288C7ED9005D7043 /* FlowSummary */,
-				9A5AAFCD288AB7C800A0E74F /* Info */,
-				9A5AAFC2288A975500A0E74F /* TextInput */,
+				9A13800028E5B91C003D0C8A /* SignUpFlow.swift */,
 			);
-			name = Steps;
+			path = SignupFlow;
 			sourceTree = "<group>";
 		};
-		9A5AAFC1288A96B300A0E74F /* Error */ = {
+		9A13800128E5B91C003D0C8A /* FlowList */ = {
 			isa = PBXGroup;
 			children = (
-				9A5AAFDA288ACE6700A0E74F /* FlowErrorView.swift */,
-				9A5AAFDC288ACE7800A0E74F /* FlowErrorViewModel.swift */,
-				9A5AAFDE288AD0B100A0E74F /* FlowErrorWireframe.swift */,
+				9A13800228E5B91C003D0C8A /* FlowListViewModel.swift */,
+				9A13800328E5B91C003D0C8A /* FlowListWireframe.swift */,
+				9A13800428E5B91C003D0C8A /* FlowListView.swift */,
 			);
-			name = Error;
+			path = FlowList;
 			sourceTree = "<group>";
 		};
-		9A5AAFC2288A975500A0E74F /* TextInput */ = {
+		9A13801928E5CCED003D0C8A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D39EEBE928917F7700725885 /* TextInputWireframe.swift */,
-				9A5AAFC3288A977800A0E74F /* TextInputContent.swift */,
-				9A5AAFC5288A979D00A0E74F /* TextInputView.swift */,
-				9A5AAFC7288A97AE00A0E74F /* TextInputViewModel.swift */,
-				9A5AAFC9288A9A9000A0E74F /* TextInputStepHandlerDefinition.swift */,
+				9A13800628E5B91C003D0C8A /* Assets.xcassets */,
+				9A13800728E5B91C003D0C8A /* LaunchScreen.xib */,
+				9A13801728E5CBAB003D0C8A /* Info.plist */,
 			);
-			name = TextInput;
-			sourceTree = "<group>";
-		};
-		9A5AAFCD288AB7C800A0E74F /* Info */ = {
-			isa = PBXGroup;
-			children = (
-				9A5AAFCE288AB7E300A0E74F /* InfoContent.swift */,
-				9A5AAFD2288AB80700A0E74F /* InfoViewModel.swift */,
-				9A5AAFD4288AB81700A0E74F /* InfoView.swift */,
-				9A5AAFD6288AB82A00A0E74F /* InfoWireframe.swift */,
-				9A5AAFD8288AB83D00A0E74F /* InfoStepHandlerDefinition.swift */,
-			);
-			name = Info;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		9A5AAFE0288AF16B00A0E74F /* FlowList */ = {
@@ -230,38 +189,12 @@
 			name = FlowList;
 			sourceTree = "<group>";
 		};
-		9AB80288288C78A2005D7043 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				9AB80289288C78BC005D7043 /* Color+Extension.swift */,
-				9AB8028B288C7902005D7043 /* PrimaryButton.swift */,
-				9AB8028D288C79FF005D7043 /* SecondaryButton.swift */,
-				9AB8028F288C7D22005D7043 /* ButtonViewModel.swift */,
-				9AB8029A288C95F8005D7043 /* TitleText.swift */,
-				9AB8029C288C97B5005D7043 /* Font+Extension.swift */,
-				9AB8029E288C97F2005D7043 /* BodyText.swift */,
-				9AB802A2288CA715005D7043 /* TextInput.swift */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
-		9AB80291288C7ED9005D7043 /* FlowSummary */ = {
-			isa = PBXGroup;
-			children = (
-				D39EEBE728917F3500725885 /* FlowSummaryView.swift */,
-				9AB80298288C7FAD005D7043 /* FlowSummaryStepHandlerDefinition.swift */,
-				9AB80292288C7F03005D7043 /* FlowSummaryWireframe.swift */,
-				9AB80294288C7F15005D7043 /* FlowSummaryViewModel.swift */,
-			);
-			name = FlowSummary;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* flowkitAdditions_Example */ = {
+		607FACCF1AFB9204008FA782 /* flowkitSwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "flowkitAdditions_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "flowkitSwiftUI" */;
 			buildPhases = (
 				0C72CA619C1B7F5F6693CB82 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -273,9 +206,28 @@
 			);
 			dependencies = (
 			);
-			name = flowkitAdditions_Example;
+			name = flowkitSwiftUI;
 			productName = flowkitAdditions;
-			productReference = 607FACD01AFB9204008FA782 /* flowkitAdditions_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* flowkitSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A137FE328E5B899003D0C8A /* flowkitUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A137FF428E5B899003D0C8A /* Build configuration list for PBXNativeTarget "flowkitUIKit" */;
+			buildPhases = (
+				9A137FE428E5B899003D0C8A /* [CP] Check Pods Manifest.lock */,
+				9A137FE528E5B899003D0C8A /* Sources */,
+				9A137FED28E5B899003D0C8A /* Frameworks */,
+				9A137FEF28E5B899003D0C8A /* Resources */,
+				9A137FF328E5B899003D0C8A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = flowkitUIKit;
+			productName = flowkitAdditions;
+			productReference = 9A137FF728E5B899003D0C8A /* flowkitUIKit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -308,7 +260,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* flowkitAdditions_Example */,
+				607FACCF1AFB9204008FA782 /* flowkitSwiftUI */,
+				9A137FE328E5B899003D0C8A /* flowkitUIKit */,
 			);
 		};
 /* End PBXProject section */
@@ -319,8 +272,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				D39EEBEF2891802B00725885 /* signUpFlowResponse.json in Resources */,
 				607FACDD1AFB9204008FA782 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A137FEF28E5B899003D0C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A137FF028E5B899003D0C8A /* LaunchScreen.xib in Resources */,
+				9A13801328E5B91C003D0C8A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,11 +303,53 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-flowkitAdditions_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-flowkitSwiftUI-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A137FE428E5B899003D0C8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-flowkitUIKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A137FF328E5B899003D0C8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-flowkitUIKit/Pods-flowkitUIKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Shared/Shared.framework",
+				"${BUILT_PRODUCTS_DIR}/flowkit-ios/FlowKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Shared.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlowKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-flowkitUIKit/Pods-flowkitUIKit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B3D5F3D7ABF9515F092059D1 /* [CP] Embed Pods Frameworks */ = {
@@ -355,16 +358,18 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-flowkitAdditions_Example/Pods-flowkitAdditions_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-flowkitSwiftUI/Pods-flowkitSwiftUI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Shared/Shared.framework",
 				"${BUILT_PRODUCTS_DIR}/flowkit-ios/FlowKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Shared.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlowKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-flowkitAdditions_Example/Pods-flowkitAdditions_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-flowkitSwiftUI/Pods-flowkitSwiftUI-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -374,38 +379,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AB8029D288C97B5005D7043 /* Font+Extension.swift in Sources */,
-				9A5AAFC4288A977800A0E74F /* TextInputContent.swift in Sources */,
 				9A5AAFE4288AF19A00A0E74F /* FlowListViewModel.swift in Sources */,
-				9A5AAFC6288A979D00A0E74F /* TextInputView.swift in Sources */,
 				9A5AAFE6288AF1D600A0E74F /* FlowListWireframe.swift in Sources */,
-				9A5AAFCF288AB7E300A0E74F /* InfoContent.swift in Sources */,
-				9A5AAFC8288A97AE00A0E74F /* TextInputViewModel.swift in Sources */,
-				9AB80299288C7FAD005D7043 /* FlowSummaryStepHandlerDefinition.swift in Sources */,
-				9AB80295288C7F15005D7043 /* FlowSummaryViewModel.swift in Sources */,
-				9AB8029B288C95F8005D7043 /* TitleText.swift in Sources */,
-				9A5AAFCA288A9A9000A0E74F /* TextInputStepHandlerDefinition.swift in Sources */,
-				9AB8028A288C78BC005D7043 /* Color+Extension.swift in Sources */,
-				D39EEBEA28917F7700725885 /* TextInputWireframe.swift in Sources */,
-				9AB8028E288C79FF005D7043 /* SecondaryButton.swift in Sources */,
-				9A5AAFD7288AB82A00A0E74F /* InfoWireframe.swift in Sources */,
-				9A5AAFDD288ACE7800A0E74F /* FlowErrorViewModel.swift in Sources */,
-				9AB8029F288C97F2005D7043 /* BodyText.swift in Sources */,
-				9A5AAFD9288AB83D00A0E74F /* InfoStepHandlerDefinition.swift in Sources */,
-				D39EEBE828917F3500725885 /* FlowSummaryView.swift in Sources */,
-				9A5AAFC0288A889700A0E74F /* LocalFlowLoader.swift in Sources */,
-				9AB80290288C7D22005D7043 /* ButtonViewModel.swift in Sources */,
-				9AB802A3288CA715005D7043 /* TextInput.swift in Sources */,
-				9A5AAFD3288AB80700A0E74F /* InfoViewModel.swift in Sources */,
-				9AB8028C288C7902005D7043 /* PrimaryButton.swift in Sources */,
 				9A5AAFE2288AF18E00A0E74F /* FlowListView.swift in Sources */,
-				D39EEBF02891802B00725885 /* SignUpFlow.swift in Sources */,
-				9A5AAFDF288AD0B100A0E74F /* FlowErrorWireframe.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				D39EEBEC28917FCD00725885 /* SignUpStepFactory.swift in Sources */,
-				9A5AAFD5288AB81700A0E74F /* InfoView.swift in Sources */,
-				9A5AAFDB288ACE6700A0E74F /* FlowErrorView.swift in Sources */,
-				9AB80293288C7F03005D7043 /* FlowSummaryWireframe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A137FE528E5B899003D0C8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A13801528E5B91C003D0C8A /* AppDelegate.swift in Sources */,
+				9A13801128E5B91C003D0C8A /* FlowListView.swift in Sources */,
+				9A13801028E5B91C003D0C8A /* FlowListWireframe.swift in Sources */,
+				9A13800E28E5B91C003D0C8A /* SignUpFlow.swift in Sources */,
+				9A13800F28E5B91C003D0C8A /* FlowListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +405,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				607FACDF1AFB9204008FA782 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		9A13800728E5B91C003D0C8A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A13800828E5B91C003D0C8A /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -524,14 +521,14 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A78C339A91C3BB46F66EB5CB /* Pods-flowkitAdditions_Example.debug.xcconfig */;
+			baseConfigurationReference = F1BE8780350058FA0D615292 /* Pods-flowkitSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = flowkitAdditions/Info.plist;
+				INFOPLIST_FILE = flowkitAdditionsSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.n26.flowkitAdditionsSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -540,14 +537,46 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E4A0359E0FC7EE090121DF4 /* Pods-flowkitAdditions_Example.release.xcconfig */;
+			baseConfigurationReference = CC1F27DC846E37FF91A46BF3 /* Pods-flowkitSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = flowkitAdditions/Info.plist;
+				INFOPLIST_FILE = flowkitAdditionsSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.n26.flowkitAdditionsSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		9A137FF528E5B899003D0C8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46EB0C4BE3D9F606B6416426 /* Pods-flowkitUIKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = flowkitAdditionsUIKit/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.n26.flowkitAdditionsUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		9A137FF628E5B899003D0C8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 649AD231F7FEF3A4AD884FC3 /* Pods-flowkitUIKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = flowkitAdditionsUIKit/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.n26.flowkitAdditionsUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -566,11 +595,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "flowkitAdditions_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "flowkitSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A137FF428E5B899003D0C8A /* Build configuration list for PBXNativeTarget "flowkitUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A137FF528E5B899003D0C8A /* Debug */,
+				9A137FF628E5B899003D0C8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

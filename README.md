@@ -103,12 +103,14 @@ To start creating a flow, we need the `FlowData`. Retrieve the FlowData from you
 let flowData = FlowData<YourStep>(id: "idFlow", initialStepId: "stepId1", stepsInfo: [YourStepInfo])
 ```
 
+#### 4.1 UIKit
+
 Once we have our `StepFactory` and `FlowData` we can create our flow:
 ```swift
 let flow = FlowKit<YourFlowDefinition>(flowData: flowData, featureStepFactory: YourFactory())
 ```
 
-Wherever you want to start the flow, you have to call the method `start`
+Wherever you want to start the flow, you have to call the method `start` and inject a `UINavigationController`
 
 ```swift
 flow.start(
@@ -118,6 +120,29 @@ flow.start(
         //Add here you stuff.
     }
 )
+```
+
+#### 4.2 SwiftUI
+
+To present a Flow in SwiftUI we create our `FlowKitSwiftUIViewModel` using `StepFactory` and `FlowData`
+
+```swift
+let flowViewModel = FlowKitSwiftUIViewModel<YourFlowDefinition>(
+    flowData: flowData, 
+    featureStepFactory: YourFactory()
+    onFinish: { flowOutput, navigation in
+        //You have the output of the whole flow.
+        //Add here you stuff.
+    }
+)
+```
+
+To present the flow modally on SwiftUI we use the `FlowKitView`
+
+```swift
+.sheet(isPresented: $presentFlow) {
+    FlowKitSwiftUIView<YourFlowDefinition>(viewModel: flowViewModel)
+}
 ```
 
 ### 5. How to use the flow output typed

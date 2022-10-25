@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'flowkit-ios'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Dynamic and type-safe framework for building linear and non-linear flows'
 
   s.description      = "FlowKit is a dynamic flow framework capable of building a flow, based on conditions and ordered according to a logic of next steps"
@@ -15,7 +15,11 @@ Pod::Spec.new do |s|
 
   s.module_name = 'FlowKit'
 
-  s.source_files = 'flowkit-ios/Classes/**/*'
+  s.default_subspec = 'Core'
+
+  s.subspec 'Core' do |sp|
+    sp.source_files = 'flowkit-ios/Classes/**/*'
+  end
 
   s.test_spec 'Tests' do |test_spec|
     test_spec.requires_app_host = false
@@ -26,6 +30,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'Additions' do |sp|
     sp.source_files = 'flowkitAdditions/Classes/**/*'
+    sp.dependency 'flowkit-ios/Core'
   end
-
 end

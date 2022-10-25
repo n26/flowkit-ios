@@ -1,8 +1,13 @@
 use_frameworks!
 
-platform :ios, '12.0'
+platform :ios, '13.0'
 
-target 'flowkitAdditions_Example' do
-  pod 'flowkit-ios', :path => '../../'
+pod 'Shared', :path => './Shared'
+
+target 'flowkitSwiftUI' do
+  pod 'flowkit-ios/Additions', :path => '../../'
+end
+
+target 'flowkitUIKit' do
   pod 'flowkit-ios/Additions', :path => '../../'
 end

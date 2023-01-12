@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = 'https://github.com/n26/flowkit-ios/tree/main'
   spec.description  = "FlowKitAdditions Shared components"
   spec.license      = "MIT"
-  spec.author       = { 'NA' => 'N26 GmbH' }
+  spec.author       = { 'NA' => 'N26 AG' }
   spec.platform     = :ios, "13.0"
   spec.source       = { :path => "." }
   spec.source_files = "**/*.swift"

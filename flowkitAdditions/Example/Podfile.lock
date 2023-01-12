@@ -1,7 +1,7 @@
 PODS:
-  - flowkit-ios/Additions (1.0.2):
+  - flowkit-ios/Additions (1.0.3):
     - flowkit-ios/Core
-  - flowkit-ios/Core (1.0.2)
+  - flowkit-ios/Core (1.0.3)
   - Shared (0.0.1):
     - flowkit-ios/Additions
 
@@ -16,8 +16,8 @@ EXTERNAL SOURCES:
     :path: "./Shared"
 
 SPEC CHECKSUMS:
-  flowkit-ios: a1a6f9267523ce7399980d52da7a1c1923879dc9
-  Shared: 36f132b193f90c36cf9f31e1f91a1c94e7f9daf4
+  flowkit-ios: 82640be4712403bfefc3226876f09f9d54affbe0
+  Shared: d7eea96ee586b8889c81afe4ad1afca86127a42b
 
 PODFILE CHECKSUM: eaa1178591d0129289f729282a4959478e511173
 

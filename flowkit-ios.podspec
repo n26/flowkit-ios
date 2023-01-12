@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name             = 'flowkit-ios'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'Dynamic and type-safe framework for building linear and non-linear flows'
 
   s.description      = "FlowKit is a dynamic flow framework capable of building a flow, based on conditions and ordered according to a logic of next steps"
 
   s.homepage         = 'https://github.com/n26/flowkit-ios/tree/main'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'NA' => 'N26 GmbH' }
+  s.author           = { 'NA' => 'N26 AG' }
   s.source           = { :git => 'git@github.com:n26/flowkit-ios.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.0'

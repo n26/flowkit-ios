@@ -241,7 +241,7 @@ targets: [
 
 ## License
 
-Copyright (c) 2022 N26 GmbH, licensed under the [MIT license](LICENSE).
+Copyright (c) 2023 N26 AG, licensed under the [MIT license](LICENSE).
 
 ## Contributing
 

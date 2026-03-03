@@ -1,0 +1,12 @@
+name: CI
+on:
+  push:
+jobs:
+  ci-pipeline:
+    runs-on:
+      group: medium
+      labels:
+        - 'self-hosted'
+    steps:
+      - run: exit 0
+

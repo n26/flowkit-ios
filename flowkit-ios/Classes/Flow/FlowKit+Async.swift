@@ -31,6 +31,10 @@ public extension FlowKit {
     ///   - willPerformStep: Called when a new step is about to be performed.
     /// - Returns: The flow output produced when the flow finishes.
     /// - Throws: ``FlowKit/FlowError`` if the flow or a step fails.
+    /// - Note: Cancelling the awaiting task does not cancel a running flow — flow
+    ///   lifecycle stays navigation-driven (e.g. dismissing the stack), exactly as
+    ///   with the completion-based API. Structured cancellation can be layered on
+    ///   later without changing this signature.
     @MainActor
     func start(
         on navigation: UINavigationController,

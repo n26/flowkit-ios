@@ -25,7 +25,7 @@ public extension StepHandler {
     /// completion. Overload resolution disambiguates from the completion-based
     /// `create` by the closure's arity (4 params, no trailing completion) and
     /// its `async` effect.
-    static func create<STEP_DEFINITION: StepHandlerDefinition>(
+    static func create(
         shouldBeDisplayed: ((_ stepContent: STEP_DEFINITION.CONTENT, _ displayConditions: [DisplayConditionProtocol]?, _ currentFlowOutput: FlowOutput<STEP_DEFINITION.FLOW_OUTPUT>) -> Bool)? = nil,
         perform: @escaping (_ stepInfo: STEP_DEFINITION.STEP, _ stepContent: STEP_DEFINITION.CONTENT, _ navigation: UINavigationController, _ currentFlowOutput: FlowOutput<STEP_DEFINITION.FLOW_OUTPUT>) async -> STEP_DEFINITION.STEP_OUTPUT?
     ) -> StepHandler<STEP_DEFINITION> {
@@ -42,7 +42,7 @@ public extension StepHandler {
 
     /// Async counterpart of ``createWithEmptyOutput(shouldBeDisplayed:perform:)``
     /// for steps that produce no output.
-    static func createWithEmptyOutput<STEP_DEFINITION: StepHandlerDefinition>(
+    static func createWithEmptyOutput(
         shouldBeDisplayed: ((_ stepContent: STEP_DEFINITION.CONTENT, _ displayConditions: [DisplayConditionProtocol]?, _ currentFlowOutput: FlowOutput<STEP_DEFINITION.FLOW_OUTPUT>) -> Bool)? = nil,
         perform: @escaping (_ stepInfo: STEP_DEFINITION.STEP, _ stepContent: STEP_DEFINITION.CONTENT, _ navigation: UINavigationController, _ currentFlowOutput: FlowOutput<STEP_DEFINITION.FLOW_OUTPUT>) async -> Void
     ) -> StepHandler<STEP_DEFINITION> where STEP_DEFINITION.STEP_OUTPUT == StepOutputEmpty {

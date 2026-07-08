@@ -103,4 +103,23 @@ final class FlowKitAsyncTests: XCTestCase {
 
         XCTAssertEqual(output.rawData.count, 0)
     }
+
+    func test_asyncStart_whenStepHandlerMissing_throwsFlowError() async {
+        // No handler is registered for "unknownType", so the engine fails its
+        // integrity check; the async start must rethrow it (the completion API
+        // would instead route it to `onErrorHandler`).
+        let flowData = FlowData<StepMock>(id: "test", initialStepId: "test1", stepsInfo: makeSteps(count: 1, type: "unknownType"))
+        let flow = FlowKit<AsyncFlowDefinitionMock>(flowData: flowData, featureStepFactory: AsyncTestStepFactory())
+
+        do {
+            _ = try await flow.start(on: UINavigationController())
+            XCTFail("Expected start(on:) to throw a FlowError")
+        } catch let error as FlowKit<AsyncFlowDefinitionMock>.FlowError {
+            guard case .cannotCreateStepHandler = error else {
+                return XCTFail("Unexpected FlowError: \(error)")
+            }
+        } catch {
+            XCTFail("Unexpected error type: \(error)")
+        }
+    }
 }
